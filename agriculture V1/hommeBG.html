@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .home{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        .home .left,.right,.top{
+            height: 1px;
+            background-color: aliceblue;
+            position: absolute;
+        }
+        .home .right{
+            transform: rotate(-150deg) translateY(130px);
+            right: 0;
+            bottom: 0;
+            width: 41%;
+        }
+        .home .left{
+            width: 70%;
+            left: 0;
+            transform: rotate(161deg) translateY(100px);
+            bottom: 0;
+            background-color: transparent;
+        }
+
+        .home .top{
+            transform: rotate(180deg);
+              top: 0%;
+              width: 1px;
+               height: 72.5%;
+               left: 65.9%;
+        }
+        .home .armor{
+            transform: rotate(-19deg)rotateX(0deg)translateY(-40px)translateX(-400px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 600px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+        }
+        .home .armor div{
+           position: relative;
+        }
+        .home .armor div .R{
+            width: 1px;
+    height: 10px;
+    background-color: aliceblue;
+    position: absolute;
+    right: -8%;
+    transform: rotate(19deg);
+        }
+        .home .armor div .R .un{
+            width: 540px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-580px, 106px) rotate(-19deg) translateX(55px);
+        }
+        .home .armor div .R .d{
+            width: 65px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(35deg)translate(3px, 19px);
+        }
+        .home .armor div .R1{
+            width: 1px;
+    height: 10px;
+    background-color: aliceblue;
+    position: absolute;
+    right: -8%;
+            transform: rotate(19deg) translateX(-20px) translateY(6px);
+        }
+        .home .armor div .R1 .un{
+            width: 540px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-580px, 106px) rotate(-19deg) translateX(55px);
+        }
+        .home .armor div .R1 .d{
+            width: 65px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(35deg)translate(3px, 19px);
+        }
+        .home .armor div .R2{
+            width: 1px;
+    height: 10px;
+    background-color: aliceblue;
+    position: absolute;
+    right: -8%;
+    transform: rotate(19deg) translateX(-40px) translateY(15px);
+        }
+        .home .armor div .R2 .un{
+            width: 540px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-580px, 106px) rotate(-19deg) translateX(55px);
+        }
+        .home .armor div .R2 .d{
+            width: 65px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(35deg)translate(3px, 19px);
+        }
+        .home .armor div .R3{
+            width: 1px;
+    height: 10px;
+    background-color: aliceblue;
+    position: absolute;
+    right: -8%;
+    transform: rotate(19deg) translateX(-60px) translateY(21px);
+        }
+        .home .armor div .R3 .un{
+            width: 540px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-580px, 106px) rotate(-19deg) translateX(55px);
+        }
+        .home .armor div .R3 .d{
+            width: 65px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(35deg)translate(3px, 19px);
+        }
+        .home .armor div .R4{
+            width: 1px;
+    height: 10px;
+    background-color: aliceblue;
+    position: absolute;
+    right: -8%;
+    transform: rotate(19deg) translateX(-80px) translateY(30px);
+        }
+        .home .armor div .R4 .un{
+            width: 540px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-580px, 106px) rotate(-19deg) translateX(55px);
+        }
+        .home .armor div .R4 .d{
+            width: 65px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(35deg)translate(3px, 19px);
+        }
+        .home .armor div .bots{
+            width: 100%;
+            position: absolute;
+
+            bottom: 0;
+        }
+        .home .armor div .tops{
+            width: 100%;
+            border: 1px solid aliceblue;
+            position: absolute;
+           top: 0;
+        }
+        .ten{
+            border: 1px solid aliceblue;
+        }
+        .first{
+            left: 17%;
+        }
+        .leftWall,.rightWall{
+           
+            width: 1px;
+            height: 315px;
+           background-color: aliceblue;
+        }
+        .leftWall{
+            position: absolute;
+            left: 29.5%;
+             top: 66.5%;
+        }
+        .rightWall{
+            position: absolute;
+            right: 34.7%;
+            top: 47%;
+        }
+        .third{
+            left: 13.5%;
+        }
+        .five{
+            left: 10.2%;
+        }
+        .seven{
+            left: 6.8%;
+        }
+        .nine{
+            left: 3.3%;
+}
+        .coLeft{
+            width: 1px;
+            height: 315px;
+            background: aliceblue;
+            position: absolute;
+            top: 63%;
+            left: 26%;
+        }
+        .coLeft .to{
+            width: 65px;
+            height: 1px;
+            background-color: aliceblue;
+            position: absolute;
+            top: 6%;
+            transform: rotate(32deg) translate(-4px, 0px);
+        }
+        .coLeft .bo{
+            width: 65px;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: -6%;
+    transform: rotate(34deg) translate(-4px, 0px);
+        }
+        .co{
+            width: 600px;
+    height: 1px;
+    background: aliceblue;
+    position: absolute;
+    top: 63%;
+    left: 26%;
+    transform: rotate(-19deg) translate(18px, -98px);
+        }
+.co div{
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 65px;
+    background-color: aliceblue;
+    transform: rotate(-40deg)translate(20px, 8px);
+}
+.one{
+    position: absolute;
+    right: 0;
+    width: 39.5%;
+    height: 1px;
+    background-color: aliceblue;
+}
+.two{
+    width: 1%;
+    height: 1px;
+    background-color: aliceblue;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="home">
+        <div class="leftWall"></div>
+                <div class="rightWall"></div>
+                <div class="coLeft">
+                    <div class="to"></div>
+                    <div class="bo"></div>
+                </div>
+                <div class="co">
+                    <div></div>
+                </div>
+        <div class="left">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <div class="right"></div>
+        <div class="top"></div>
+        <div class="armor">
+            
+              <div>
+                <div class="R">
+                    <div class="un"></div>
+                    <div class="d"></div>
+                </div>
+                <div class="tops first"></div>
+                <div class="bots sec"></div>
+              </div>
+              <div>
+                <div class="R1">
+                    <div class="un"></div>
+                    <div class="d"></div>
+                </div>
+                <div class="tops third"></div>
+                <div class="bots forth"></div>
+              </div>
+              <div>
+                 <div class="R2">
+                    <div class="un"></div>
+                    <div class="d"></div>
+                </div>
+                <div class="tops five"></div>
+                <div class="bots six"></div>
+              </div>
+              <div>
+                 <div class="R3">
+                    <div class="un"></div>
+                    <div class="d"></div>
+                </div>
+                <div class="tops seven"></div>
+                <div class="bots huit"></div>
+              </div>
+              <div>
+                 <div class="R4">
+                    <div class="un"></div>
+                    <div class="d"></div>
+                </div>
+                <div class="tops nine"></div>
+                <div class="bots ten"></div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

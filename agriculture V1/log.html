@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="">
+    <link rel="stylesheet" href="css/logi.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: aliceblue;
+        }
+
+    </style>
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="loger">
+        <div class="logo1">
+            <img src="don/logo.png" alt="">
+        </div>
+    <div class="button">
+        <div class="pos">
+        <div class="bg"></div>
+        <button id="btnLog">Login</button>
+        <button id="btnReg">Register</button>
+    </div>
+    </div>
+    <div class="form">
+    <form action="login.php" method="post">
+        <div class="login">
+        <div class="nom">
+       <h1>Login</h1>
+        </div>
+        <div class="input">
+            <div class="email">
+        <h2 id="mail">Email/Number</h2>
+        <input type="text" name="email" id="email" class="lo">
+    </div>
+    <div class="pass">
+        <h2 id="pswrd">Password</h2>
+        <input type="text" name="pass" id="pass" class="lo">
+    </div>
+    <div class="check">
+        <div class="p">
+        <p>Remember</p>
+    </div>
+        <input type="checkbox" name="" id="checkbox">
+    </div>
+        </div>
+        <div class="btn">
+        <input type="submit" name="login" value="Sign in">
+        <div class="logo">
+            <img src="don/d.svg" alt="">
+            <img src="don/o.svg" alt="">
+            <img src="don/n.svg" alt="">
+        </div>
+        </div>
+    </div>
+</form>
+<form action="">
+    <div class="sign">
+        <div class="nom">
+            <h1>Sign up</h1>
+        </div>
+        <div class="input">
+            <div class="name">
+         <h3>Name</h1>
+         <input type="text" name="" id="name" class="reg">
+        </div>
+        <div class="surname">
+         <h3>Surname</h3>
+         <input type="text" name="" id="surname" class="reg">
+        </div>
+        <div class="log">
+         <h3>Email/Number</h3>
+         <input type="text" name="" id="login" class="reg"> 
+        </div>
+        <div class="num">
+         <h3>Password</h3>
+         <input type="text" name="" id="number" class="reg">
+        </div>
+
+        </div>
+        <div class="btn">
+<input type="submit" value="Register">
+<div class="logo">
+    <img src="don/d.svg" alt="">
+    <img src="don/o.svg" alt="">
+    <img src="don/n.svg" alt="">
+</div>
+        </div>
+    </div>
+    </form>
+    </div>
+</div>
+</body>
+<script src="js/btn.js"></script>
+<script src="js/textAnim.js"></script>
+</html>

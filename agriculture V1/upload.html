@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', historic;
+        }
+        body{
+        background-color: rgb(37, 3, 56);
+        }
+        form{
+            background-color: aliceblue;
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 10% 30%;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        form div{
+            position: relative;
+        }
+        form div .div{
+            width: 80%;
+            height: 80%;
+            border: 2px dashed rgb(42, 36, 242);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 7px;
+         
+        }
+        form div .div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(42, 36, 242);
+        }
+        form div div h{
+            padding: 0;
+            margin: 0;
+            width: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: rgb(42, 36, 242);
+        }
+        form div p{
+            text-align: center;
+            color: rgb(42, 36, 242);
+        }
+        form .btn{
+             position: relative;
+        }
+        form .btn input{
+            width: 70%;
+            height: 60%;
+            background-color: rgb(37, 37, 242);
+            border-radius: 7px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: aliceblue;
+            border: none;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.361);
+        }
+        form .btn input:hover{
+            box-shadow: 0 0 15px rgb(215, 13, 13);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <div class="div">
+                <input id="file" type="file" name="file" id="file" hidden>
+               <div>
+                <h1>File</h1>
+               </div>
+            </div>
+        </div>
+        <div>
+            <p>fileName</p>
+        </div>
+        <div class="btn">
+            <input id="send" type="button" value="SEND">
+        </div>
+    </form>
+</body>
+<script>
+    let form = document.querySelector('form'),
+        div = document.querySelector('.div'),
+        file = document.querySelector('#file'),
+        send = document.querySelector('#send');
+
+        div.addEventListener("click", ()=>{
+            file.click();
+            console.log(file);
+        });
+
+        send.addEventListener("click", (e)=>{
+           /* form.addEventListener("submit",e=>{
+                e.preventDefault();
+            });*/
+           let xhr = new XMLHttpRequest();
+           xhr.open("POST","uplo.php");
+           xhr.setRequestHeader("content-type","multipart/form-data");
+           let formData = new FormData(form);
+           xhr.send(formData);
+            console.log(file)
+        })
+
+</script>
+</html>

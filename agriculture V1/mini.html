@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+        }
+        body{
+            background-color: aliceblue;
+            width: 100vw;
+            height: 100vh;
+        }
+        .mini{
+            width: 70px;
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    background-color: aliceblue;
+    box-shadow: 2px 1px 6px 0px #00000057;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+        }
+        .mini div{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mini div img{
+       width: 40px;
+       height: 40px;
+        }
+        .mini #bg1{
+            border-right: 15px solid deepskyblue;
+        }
+        .admin{
+            width: 300px;
+            height: 100vh;
+            background-color: deepskyblue;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.548);
+            transform: translateX(-100%);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="mini">
+        <div id="bg1"><img src="icon/profile.svg" alt=""></div>
+        <div ><img src="icon/address.svg" alt=""></div>
+        <div><img src="icon/employee.svg" alt=""></div>
+        <div><img src="icon/rapport.svg" alt=""></div>
+        <div><img src="icon/onenote.svg" alt=""></div>
+        <div><img src="icon/logout.svg" alt=""></div>
+    </div>
+    <div class="admin">
+
+    </div>
+</body>
+<script>
+    let mini = document.querySelector('.mini'),
+        admin = document.querySelector('.admin');
+
+        mini.addEventListener("mouseover",(e)=>{
+            console.log(e);
+            mini.style.transform = 'translateX(-50%)';
+            mini.style.transition = '0.5s';
+            admin.style.transform = 'translateX(0px)';
+            admin.style.transition = '0.5s';
+        });
+        admin.addEventListener("mouseout",(e)=>{
+            console.log(e);
+            mini.style.transform = 'translateX(0%)';
+            mini.style.transition = '0.5s';
+            admin.style.transform = 'translateX(-100%)';
+            admin.style.transition = '0.5s';
+        });
+</script>
+</html>

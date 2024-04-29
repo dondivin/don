@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+        }
+        @media only screen and (max-width:400px) {
+            
+       
+        .err{
+            width: 80%;
+            height: 200px;
+          display: grid;
+          grid-template-columns: 100%;
+           grid-template-rows: 60% 40%;
+            
+        }
+        .err .img{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .err .img img{
+            width: 170px;
+            height: 170px;
+        }
+        .err .h1{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .err .h1 h1{
+            font-size: 180%;
+            font-weight: 800;
+            text-align: center;
+            color: dodgerblue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<body>
+    <div class="err">
+        <div class="img">
+            <img src="gif/ordi map.gif" alt="">
+        </div>
+        <div class="h1">
+            <h1>404 Error Found on site</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/anothor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(7, 2, 80);
+        }
+   
+    </style>
+    <title>Formulaire</title>
+</head>
+<body>
+    <form class="forms" action="regForm.php?" enctype="multipart/form-data" method="post">
+        <div class="h1">
+            <div>
+                <h1>Identite Complete</h1>
+            </div>
+        </div>
+       <div class="Fname">
+        <div>
+            <label for="">Izina</label>
+            <input type="text" placeholder="Nom Complet" name="Fname" id="nom" required>
+        </div>
+       <p id="nomErr">Shiramwo Indome gusa</p>
+    </div>
+       <div class="Fphone">
+      <div> 
+        <label for="">Nomero za Telephone</label>
+         <input type="text" placeholder="Numero de Téléphone" name="Fphone" id="phone" required>
+
+    </div>
+    <p id="phoneErr">Shiramwo ibiharuro gusa</p>
+    </div>
+       <div class="Femail">
+       <div>
+        <label for="">Email</label>
+        <input type="email" placeholder="Email" name="Femail" id="email">
+       </div>
+    </div>
+       <div class="Faddress">
+       <div>
+        <label for="">Aho Uba</label>
+        <input type="text" placeholder="Address" name="Faddress" id="" required>
+       </div>
+    </div>
+       <div class="Fid">
+       <div>
+        <label for="">Nomero ya karangamuntu</label>
+        <input type="text" placeholder="Numero d'Identite" name="Fnum_id" id="id" required>
+       </div>
+       <p id="idErr">Shiramwo inomero yanyu ya karangamuntu</p>
+    </div>
+       <div class="Fgender">
+       <div>
+        <select name="selectGenre" id="">
+            <option value="Homme">Umugabo</option>
+            <option value="Femme">Umugore</option>
+        </select>
+       </div>
+    </div>
+       <div class="Fcountry">
+      <div>
+        <label for="">Igihugu</label>
+        <input type="text" placeholder="Pays" name="Fcountry" id="" required>
+      </div>
+    </div>
+       <div class="Fprofil">
+        <label for=""></label>
+       <div>
+        <div id="profil">
+            <h1 id="img">Foto ikuranga</h1>
+
+        </div>
+        <input type="file" name="file" accept="image/png,image/jpeg,image/jpg" id="file" hidden>
+       </div>
+    </div>
+    <div class="send">
+<div>
+    <input type="submit" name="send" value="Kurungika">
+</div>
+    </div>
+    </form>
+</body>
+<script src="js/formulaire.js">
+   
+</script>
+</html>

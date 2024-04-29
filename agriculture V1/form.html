@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" maxlength="1" id="">
+        <button type="submit">nvoyer</button>
+        <div>abana</div>
+    </form>
+</body>
+<script>
+   
+
+let div = document.querySelector('div');
+setTimeout(()=>{
+    div.innerHTML = "les grand";
+},3000)
+
+
+
+    let button = document.querySelector('button');
+    let form = document.querySelector('form');
+    button.addEventListener("click",()=>{
+        let input = document.querySelector('input');
+    let a = input.value;
+        if(a === '0'){
+            alert('ego'+a);
+            console.log(a);
+      /*  form.addEventListener("submit",e=>{
+            e.preventDefault();
+        })*/
+    }else{
+        event.preventDefault();
+    }
+    })
+   
+</script>
+</html>

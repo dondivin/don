@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+.admin{
+   height: 100%;
+   width: 300px;
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 20% 45% auto;
+   box-shadow: 5px 0px 5px #00000061;
+}
+.admin .logo{
+   font-size: 30px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   background-color: skyblue;
+   font-weight: 800;
+   color: aliceblue;
+
+}
+.admin .menu ul{
+   font-size: 20px;
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 60px 60px 60px 60px 60px;
+   
+}
+.admin .menu ul li{
+   
+   list-style-type: none;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+  
+}
+.admin .menu ul li a{
+   display: grid;
+   grid-template-columns: 30% auto;
+   grid-template-rows: auto;
+   width: 80%;
+   height: 90%;
+   list-style-type: none;
+   text-decoration: none;
+   color: black;
+   font-weight: 600;
+
+}
+.admin .menu ul li a div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.admin .menu ul li a .h1{
+   font-weight: 100;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+.admin .menu ul li a div img{
+   width: 40px;
+}
+.admin .menu ul li a:hover{
+   background-color: rgba(0, 0, 0, 0.151);
+   border-radius: 7px;
+}
+.admin .menu ul #bg{
+   background-color: skyblue;
+   border-radius: 7px;
+}
+.admin .welco{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.admin .welco .border{
+width: 80%;
+height: 80%;
+background-color: aliceblue;
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 70% 30%;
+box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.195);
+border-bottom: 2px solid rgba(0, 0, 0, 0.217);
+border-left: 2px solid rgba(0, 0, 0, 0.25);
+border-right: 2px solid rgba(0, 0, 0, 0.266);
+border-radius: 10px;
+
+}
+.admin .welco .border div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.admin .welco .border div p{
+   text-align: center;
+   text-rendering: geometricPrecision;
+}
+.admin .welco .border div img{
+   width: 70%;
+   height: 100%;
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="admin">
+        <div class="logo">
+            <img src="icon/agrilogo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li ><a  href="profil.php?"><div><img id="imgP" src="icon/profile.svg" alt=""></div><div class="h1">Profile</div></a></li>
+                <li><a href="map.php?"><div><img src="icon/address.svg" alt=""></div><div class="h1">Map</div></a></li>
+                <li><a id="bg" href="employee.php?"><div><img src="icon/employee.svg" alt=""></div><div class="h1">Compte</div></a></li>
+                <li><a href="rapport.php?"><div><img src="icon/rapport.svg" alt=""></div><div class="h1">Rapport</div></a></li>
+                <li><a href="recolte.php"><div><img src="icon/farm.svg" alt=""></div><div class="h1">Recolte</div></a></li>
+            </ul>
+        </div>
+        <div class="welco">
+            <div class="border">
+                <div>
+                    <img src="photo/divin.png" alt="">
+                </div>
+                <div>
+                    <p>Welcome to the page we hope you find it so excited</p>
+                </div>
+            </div>
+        </div>
+                </div>
+</body>
+</html>

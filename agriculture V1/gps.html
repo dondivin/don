@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+</head>
+<body>
+    <a href="https://www.google.com/maps/@-3.3718272,29.3699584,20z?entry=ttu">tracker</a>
+    <button onclick="getLocation()">Show location</button>
+</body>
+<script src="js/position.js"></script>
+<script type="text/javascript">
+
+    function showLocation(pos){
+let lat = pos.coords.latitude;
+let long = pos.coords.longitude;
+alert("latitude "+lat+" longitude "+long);
+    }
+    function error(err){
+        if(err.code===1){
+            alert('Access denied');
+        }else if(err.code===2){
+            alert('position is not available');
+        }
+    };
+    function getLocation(){
+        if(navigator.geolocation){
+            let options = {
+                timeout:60000
+            };
+            navigator.geolocation.getCurrentPosition(showLocation,error,options);
+        }else{
+        alert('browser does not support geolocation');
+    }
+    };
+    window.addEventListener("load",()=>{
+        getLocation();
+    });
+
+
+/*
+   //                     version 2
+
+   // Check if geolocation is supported by the browser 
+   if ("geolocation" in navigator) { 
+    // Prompt user for permission to access their location
+     navigator.geolocation.watchPosition(
+         // Success callback function
+      function(position) { 
+        // Get the user's latitude and longitude coordinates 
+      const lat = position.coords.latitude; 
+      const lng = position.coords.longitude;
+       // Update the map with the user's new location
+       console.log(`Latitude: ${lat}, longitude: ${lng}`); },
+        // Error callback function
+        function(error) { 
+            // Handle errors, e.g. user denied location sharing permissions 
+            console.error("Error getting user location:", error); } ); } else { 
+                // Geolocation is not supported by the browser
+                 console.error("Geolocation is not supported by this browser."); }
+*/
+</script>
+</html>

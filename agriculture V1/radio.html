@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            background-color: aliceblue;
+            justify-content: center;
+            align-items: center;
+        }
+        .radio{
+        width: 80px;
+        height: 40px;
+        display: flex;
+            background-color: aliceblue;
+            justify-content: center;
+            align-items: center;
+        }
+        .radio .rad{
+            width: 80px;
+            height: 100%;
+            display: flex;
+           /* background-color: dodgerblue;*/
+           background-color: aliceblue;
+            justify-content: end;
+            align-items: center;
+            box-shadow: inset 1px 0px 4px black;;
+            border-radius: 50px;
+            position: relative;
+            
+        }
+        .radio .rad .radi{
+            width: 40px;
+            height: 38px;
+            background-color: dodgerblue;
+            border-radius: 50%;
+            position: absolute;
+          /* right: 0;*/
+          left: 4%;
+          transition: 0.5s;
+
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="radio">
+        <input type="radio" id="rad" class="radios" hidde>
+        <input type="radio" id="rad" class="radios" hidde>
+        <div class="rad">
+            <div class="radi">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let radio = document.querySelectorAll('rad'),
+        rad = document.querySelector('.rad'),
+        trigger = document.querySelector('.radi');
+
+        let on = false;
+radio.forEach((val ,index ,radio)=>{
+       val.addEventListener("click",()=>{
+        console.log(index);
+        val.click();
+            if(index === 1){
+                radio[1].click();
+                rad.style.background = 'dodgerblue';
+                trigger.style.background = 'aliceblue';
+                trigger.style.left = 48+'%';
+                on = true;
+            }else if(index === 0){
+                radio[0].click();
+                rad.style.background = 'aliceblue';
+                trigger.style.background = 'dodgerblue';
+                trigger.style.left = 4+'%';
+                on = false;
+            }
+            console.log(radio[index].checked);
+           
+       });
+   
+
+});
+       
+</script>
+</html>
