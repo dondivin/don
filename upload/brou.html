@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      background-color: aliceblue;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .anime1{
+      width: 350px;
+    height: 300px;
+    display: flex;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 3px 2px #00000036;
+    }
+    .anime1 .img{
+      width: 80px;
+    height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid dodgerblue;
+    }
+    .anime1 .img h1{
+      font-size: 400%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: dodgerblue;
+      font-weight: 900;
+    }
+    .anime1 .text{
+      text-align: center;
+    font-size: 100%;
+    display: grid;
+    color: dodgerblue;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .anime1 .btn a{
+      padding: 10px;
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: 900;
+    outline-color: rgba(255, 166, 0, 0.274);
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+    transition: 0.5s;
+    }
+    .anime1 .btn a:hover{
+      border: 5px solid rgb(255, 115, 0);
+transition: 0.5s;
+    }
+  </style>
+  <link rel="stylesheet" href="css/styl.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loged Out</title>
+</head>
+<body>
+  <div class="anime1">
+    <div class="img">
+        <h1>!</h1>
+    </div>
+    <div class="text">
+      <p>Ivyo mwashizemwo ntibihura!</p>
+      <p>Email/numero ou mot de passe est incorrect!</p>
+    </div>
+    <div class="btn">
+<a href="index.php">OK</a>
+    </div>
+</div>
+</body>
+<script>
+ 
+  setInterval(()=>{
+    let input = document.querySelector('input').value;
+    console.log(input.toUpperCase());
+    input = input.toUpperCase();
+  },500);
+ 
+
+</script>
+<script src="js/menuOption.js"></script>
+</html>

@@ -1,0 +1,506 @@
+
+.bigSite{
+    display: none;
+}
+
+@media only screen and (min-width:800px){
+
+    
+.cv{
+    width: 800px;
+    height: 700px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+}
+.cv .profil{
+ background-image: linear-gradient(180deg,rgb(112, 112, 245),rgb(252, 51, 84));
+ display: grid;
+ grid-template-columns: 100%;
+ grid-template-rows: 40% 20% 20%;
+}
+.cv .profil .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv .profil .img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:5px solid skyblue;
+}
+.cv .profil .info{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    font-weight: 100;
+}
+.cv .profil .info .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv .profil .info .head p{
+    font-size: larger;
+    font-weight: 800;
+    border-bottom: 2px solid aliceblue;
+}
+.cv .profil .info div{
+   display: grid;
+   grid-template-columns: 40% 60%;
+   grid-template-rows: 100%;
+}
+.cv .profil .info div div{
+    display: grid;
+   grid-template-columns: 40% 60%;
+   grid-template-rows: 100%;
+}
+.cv .profil .info div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv .profil .info div div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv .profil .info div div div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv .profil .info div div div img{
+  
+    width: 25px;
+    height: 25px;
+}
+.cv .profil .person{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:20% 30% 55%;
+    color: aliceblue;
+}
+.cv .profil .person .tag{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv .profil .person .tag p{
+    font-size: larger;
+    font-weight: 800;
+    border-bottom: 2px solid aliceblue;
+}
+.cv .profil .person .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv .profil .person .name h1{
+    font-size: 27px;
+}
+.cv .profil .person .info1 div{ 
+   display: grid;
+   grid-template-columns: 33% 33% 33%;
+   grid-template-rows: 10px 10px 10px;
+}
+.cv .profil .person .info1 div div{
+   display: grid;
+   grid-template-columns: 30% 70%;
+   grid-template-rows: auto;
+}
+.cv .profil .person .info1 div div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv .profil .person .info1 div div img{
+    width: 25px;
+    height: 25px;
+}
+.cv .content{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% auto;
+}
+.cv .content .nom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+    margin: 10px;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.cv .content .nom h1{
+    font-weight: 300;
+}
+.cv .content .travail{
+ display: grid;
+ grid-template-columns: 40% 10% 33%;
+ grid-template-rows: auto;
+ margin: 15px;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.cv .content .travail div{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.cv .content .travail div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv .content .travail div div img{
+    width: 35px;
+    height: 35px;
+}
+.cv .content .travail div div h1{
+    font-weight: 300;
+}
+}
+@media only screen and (max-width:450px){
+    .cv{
+        width: 100vw;
+        height: 300px;
+        background-color: aliceblue;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    }
+    .cv .profil{
+     background-image: linear-gradient(180deg,rgb(112, 112, 245),rgb(252, 51, 84));
+     display: grid;
+     grid-template-columns: 100%;
+     grid-template-rows: 40% 20% 20%;
+    }
+    .cv .profil p{
+        font-size: 70%;
+    }
+    .cv .profil .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .img img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        border:2px solid skyblue;
+    }
+    .cv .profil .info{
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        color: aliceblue;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        font-weight: 100;
+    }
+    .cv .profil .info .head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .info .head p{
+        font-size: 80%;
+        border-bottom: 2px solid aliceblue;
+    }
+    .cv .profil .info div{
+       display: grid;
+       grid-template-columns: 40% 60%;
+       grid-template-rows: 100%;
+    }
+    .cv .profil .info div div{
+        display: grid;
+       grid-template-columns: 40% 60%;
+       grid-template-rows: 100%;
+    }
+    .cv .profil .info div p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50%;
+    }
+    .cv .profil .info div div p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50%;
+    }
+    .cv .profil .info div div div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .info div div div img{
+      
+        width: 15px;
+        height: 15px;
+    }
+    .cv .profil .person{
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:20% 30% 55%;
+        color: aliceblue;
+    }
+    .cv .profil .person .tag{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .person .tag p{
+        font-size: 80%;
+     
+        border-bottom: 2px solid aliceblue;
+    }
+    .cv .profil .person .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .person .name h1{
+        font-size: 70%;
+    }
+    .cv .profil .person .info1 div{ 
+        display: grid;
+        grid-template-columns: 35% 15% 33%;
+        grid-template-rows: 100%;
+    }
+    .cv .profil .person .info1 div div{
+       display: grid;
+       grid-template-columns: 30% 70%;
+       grid-template-rows: auto;
+    }
+    .cv .profil .person .info1 div div div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .person .info1 div div img{
+        width: 15px;
+        height: 15px;
+    }
+    .cv .content{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 30% auto;
+    }
+    .cv .content .nom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+        margin: 10px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    .cv .content .nom h1{
+        font-weight: 300;
+        font-size: 100%;
+    }
+    .cv .content .travail{
+     display: grid;
+     grid-template-columns: 40% 10% 33%;
+     grid-template-rows: auto;
+     margin: 15px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    .cv .content .travail div{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    .cv .content .travail div div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .content .travail div div img{
+        width: 35px;
+        height: 35px;
+    }
+    .cv .content .travail div div h1{
+        font-weight: 300;
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width:450px){
+    .cv{
+        width: 900px;
+        height: 500px;
+        background-color: aliceblue;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    }
+    .cv .profil{
+     background-image: linear-gradient(180deg,rgb(112, 112, 245),rgb(252, 51, 84));
+     display: grid;
+     grid-template-columns: 100%;
+     grid-template-rows: 40% 20% 20%;
+    }
+    .cv .profil .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .img img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border:5px solid skyblue;
+    }
+    .cv .profil .info{
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        color: aliceblue;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        font-weight: 100;
+    }
+    .cv .profil .info .head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .info .head p{
+        font-size: 90%;
+        font-weight: 800;
+        border-bottom: 2px solid aliceblue;
+    }
+    .cv .profil .info div{
+       display: grid;
+       grid-template-columns: 40% 60%;
+       grid-template-rows: 100%;
+    }
+    .cv .profil .info div div{
+        display: grid;
+       grid-template-columns: 40% 60%;
+       grid-template-rows: 100%;
+    }
+    .cv .profil .info div p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90%;
+    }
+    .cv .profil .info div div p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90%;
+    }
+    .cv .profil .info div div div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .info div div div img{
+      
+        width: 15px;
+        height: 15px;
+    }
+    .cv .profil .person{
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:20% 30% 55%;
+        color: aliceblue;
+    }
+    .cv .profil .person .tag{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .person .tag p{
+        font-size: 80%;
+        font-weight: 800;
+        border-bottom: 2px solid aliceblue;
+    }
+    .cv .profil .person .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .person .name h1{
+        font-size: 90%;
+    }
+    .cv .profil .person p{
+        font-size: 90%;
+    }
+    .cv .profil .person .info1 div{ 
+       display: grid;
+       grid-template-columns: 35% 10% 33%;
+       grid-template-rows: 100%;
+    }
+    .cv .profil .person .info1 div div{
+       display: grid;
+       grid-template-columns: 30% 70%;
+       grid-template-rows: auto;
+    }
+    .cv .profil .person .info1 div div div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .profil .person .info1 div div img{
+        width: 15px;
+        height: 15px;
+    }
+    .cv .content{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 30% auto;
+    }
+    .cv .content .nom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+        margin: 10px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    .cv .content .nom h1{
+        font-weight: 300;
+        font-size: 100%;
+    }
+    .cv .content .travail{
+     display: grid;
+     grid-template-columns: 40% 10% 33%;
+     grid-template-rows: auto;
+     margin: 15px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    .cv .content .travail div{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    .cv .content .travail div div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv .content .travail div div img{
+        width: 35px;
+        height: 35px;
+    }
+    .cv .content .travail div div h1{
+        font-weight: 300;
+        font-size: 100%;
+    }
+}

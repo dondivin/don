@@ -1,0 +1,433 @@
+@media  screen and (min-width:700px){
+    .site1{
+    display: none;
+}
+.menu1{
+    display: none;
+}
+
+}
+
+@media only screen and (max-width:700px) {
+    .site{
+        display: none;
+    }
+    .both{
+        display: none;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .site1{
+      width: 100%;
+      height: 100%;
+     
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 80% 70px;
+    }
+
+
+/*---------------option-----------------*/
+
+.site1 .head .opt{
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    background: #0000001c;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.site1 .head .opt #opt{
+width: 35px;
+}
+.site1 .head .opt .op{
+    width: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    height: auto;
+    background: aliceblue;
+    display: flex;
+    transform: scale(0);
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px #00000078;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    bottom: -160px;
+    left: -170px;
+}
+.site1 .head .opt .op a{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    background: #0000001c;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    align-items: center;
+    display: grid;
+    position: relative;
+    color: #00000094;
+    font-size: 110%;
+    text-decoration: none;
+    /* box-shadow: 0 0 4px #0000006b; */
+    transition: 0.5s;
+    grid-template-columns: 45px auto;
+    grid-template-rows: 100%;
+}
+.site1 .head .opt .op a div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site1 .head .opt .op a div img{
+   width: 30px;
+}
+.site1 .head .opt .op a h1{
+    padding: 5px;
+    font-size: 35%;
+}
+.site1 .head .opt .op a:hover{
+    background-color: dodgerblue;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.site1 .head .opt .op a:hover > h1{
+    transition: 0.5s;
+    color: aliceblue;
+}
+
+
+/*------------------------------*/
+
+
+
+
+
+
+
+
+
+
+    .site1 .head{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-size: 40px;
+        font-weight: 800;
+        color: skyblue;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.329);
+    }
+    .site1 .head .logo{
+        width: 100%;
+        height: 100%;
+    }
+    .site1 .head .logo img{
+       width: 100%;
+       height: 100%;
+       object-fit: contain;
+    }
+    .site1 .main{
+     
+    }
+    .menu1{
+        z-index: 1111;
+       background-color: aliceblue;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.329);
+    }
+    .menu1 a img{
+        width: 40px;
+        height: 40px;
+    }
+    .menu1 a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    .menu1 a p{
+        font-size: 75%;
+        text-decoration: none;
+        color: dodgerblue;
+    }
+    #phoneBg{
+       padding: 10px;
+        background-color: skyblue;
+        border-radius: 10px;
+    }
+    #phoneBg > p{
+        color: aliceblue;
+    }
+    .site1 .main .profil{
+     width: 100%;
+     height: 100%;
+    }
+    .site1 .main .profil .content{
+        width: 100%;
+     height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 10% 65%;
+    }
+    .site1 .main .profil .content .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .site1 .main .profil .content .img .photo{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid skyblue;
+    }
+    .site1 .main .profil .content .img .photo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .site1 .main .profil .content .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .site1 .main .profil .content .name a{
+        color: dodgerblue;
+    }
+    .site1 .main .profil .content .name a h1{
+        font-weight: 900;
+        font-size: 100%;
+    }
+    .site1 .main .profil .history{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 90%;
+    }
+    .site1 .main .profil .history .p{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.363);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+        position: relative;
+    }
+
+    .site1 .main .profil .history .p a{
+        position: absolute;
+        top: 50%;
+        right: -10%;
+        transform: translate(-50%,-50%);
+        padding: 2px 10px;
+        background: #ffbc1e;
+        border-radius: 10px;
+        color: aliceblue;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+    .site1 .main .profil .history .p a:hover{
+        background-color: rgb(255, 102, 0);
+    transition: 0.5s;
+    }
+
+  
+
+
+    .site1 .main .profil .history .p h1{
+        font-weight: 100;
+        color: rgba(0, 0, 0, 0.568);
+        font-size: 120%;
+    }
+    .site1 .main .profil .history .data{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% auto;
+        height: 100%;
+    }
+    .site1 .main .profil .history .data .title{
+        display: grid;
+        grid-template-columns: 10% 25% 25% 20% 20%;
+        grid-template-rows: 100%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.384);
+    }
+    .site1 .main .profil .history .data .title div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .site1 .main .profil .history .data .title div h1{
+        font-weight: 100;
+        font-size: 90%;
+        color: rgba(0, 0, 0, 0.733);
+        text-align: center;
+    }
+    .site1 .main .profil .history .data .all{
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .site1 .main .profil .history .data .all .contents{
+        display: grid;
+        grid-template-columns: 10% 25% 25% 20% 20%;
+        grid-template-rows: 70px;
+    }
+    .site1 .main .profil .history .data .all .contents div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+        margin: 0 5px;
+        color: rgba(0, 0, 0, 0.767);
+        font-size: 90%;
+    }
+     .other a{
+        text-decoration: none;
+        padding: 16%;
+        background-color: rgb(34, 197, 34);
+        border-radius: 10px;
+        color: aliceblue;
+        font-weight: 600;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.637);
+    }
+
+    /*-----------------------MAP------------------*/
+    .site1 .main .div{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 7% 90%;
+    }
+    .site1 .main .div .map1{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .site1 .main .div .map1 iframe{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .site1 .main .div .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .site1 .main .div .heading h1{
+        font-weight: 100;
+    }
+    /*--------------------employee-----------------------------*/
+    .site1 .main .content{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 7% 7% auto;
+    }
+    .site1 .main .content .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+        margin: 0 10px;
+
+    }
+    .site1 .main .content .header h1{
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .site1 .main .content .title{
+        display: grid;
+        grid-template-columns:15% 65% 20%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.384);
+    }
+    .site1 .main .content .title div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .site1 .main .content .title h1{
+        font-size: 100%;
+        font-weight: 100;
+        color: rgba(0, 0, 0, 0.74);
+    }
+    .site1 .main .content .data .list{
+display: grid;
+grid-template-columns: 15% 60% 23%;
+grid-template-rows: 70px;
+    }
+    .site1 .main .content .data .list div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+        margin: 0 4px;
+    }
+    .site1 .main .content .data .list .nom{
+        justify-content: start;
+    }
+    .site1 .main .content .data .list .more{
+        width: 100%;
+        height: 100%;
+    }
+    .site1 .main .content .data .list div p{
+        font-size: 90%;
+        color: rgba(0, 0, 0, 0.884);
+    }
+    .site1 .main .content .data .list .more{
+        gap: 10px;
+    }
+    .site1 .main .content .data .list .more a{
+        text-decoration-line: none;
+        padding: 2px;
+        background-color: yellowgreen;
+        color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.315);
+    }
+    .site1 .main .content .data{
+        height: 100%;
+        overflow-y: auto;
+    }
+    /*---------------------PROFIL VIEW------------------------*/
+    .fullImg1{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0);
+        display: none;
+        position: relative;
+    }
+    .fullImg1 #imgFull1{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .fullImg1 #closeIcon1{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+}

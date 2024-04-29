@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.auth{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.151);
+    border-radius: 10px;
+}
+.auth .error{
+    width: 90%;
+    height: 70px;
+    background-color: rgba(233, 18, 18, 0.185);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.auth .error h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgba(243, 45, 45, 0.863);
+    font-size: 100%;
+}
+.auth .nom{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.auth .nom label{
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dodgerblue;
+    text-align: center;
+}
+.auth .nom input{
+    text-align: center;
+    width: 90%;
+    height: 60px;
+    border:none;
+    border-radius: 10px;
+    border-bottom: 1px solid dodgerblue;
+    outline: none;
+    font-size: 20px;
+}
+.auth .btn{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.auth .btn button{
+    width: 90%;
+    height: 40px;
+    background-color: dodgerblue;
+    color: aliceblue;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: none;
+}
+.auth .btn button:hover{
+    background-color: rgb(14, 77, 141);
+    transition: 0.5s;
+}
+
+/*---------------pass--------------------*/
+
+.pass{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.pass label{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: green;
+    font-size: 100%;
+    background-color: rgba(26, 224, 26, 0.226);
+    border-radius: 10px;
+}
+.pass h1{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: green;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.pass .btn{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.pass a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dodgerblue;
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700    ;
+}
+.pass  a:hover{
+    border: 5px solid greenyellow;
+}
