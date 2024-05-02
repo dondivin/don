@@ -1,0 +1,18 @@
+.role a{
+    width: 150px;
+    height: 50px;
+    background-color: deepskyblue;
+    border-radius: 7px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.726);
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+        .role a:hover{
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.897);
+            background-color: rgb(16, 78, 212);
+        }

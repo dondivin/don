@@ -1,0 +1,1765 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 99vw;
+    height: 100vh;
+}
+.bigSite{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.site{
+    width: 100%;
+    height: 100%;
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 100%;
+}
+.site .mini{
+    width: 70px;
+height: 400px;
+position: absolute;
+top: 4%;
+left: 0;
+background-color: aliceblue;
+box-shadow: 2px 1px 6px 0px #00000057;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+overflow: hidden;
+z-index: 3;
+}
+.site .mini div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site .mini div img{
+width: 40px;
+height: 40px;
+}
+.site .mini #bg1{
+    border-right: 15px solid deepskyblue;
+}
+.site .admin{
+   
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 45% auto;
+    box-shadow: 5px 0 5px #0000000d;
+    position: absolute;
+    height: 100vh;
+    width: 300px;
+    z-index: 2;
+    background: aliceblue;
+    transform: translateX(-100%);
+}
+.site .admin .canc{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+   }
+   .site .admin .canc img{
+     width: 100%;
+     height: 100%;
+     transition: 0.5s;
+   }
+   .site .admin  .canc img:hover{
+     background-color: rgba(0, 0, 0, 0.158);
+     border-radius: 5px;
+     transition: 0.5s;
+   }
+.site .admin .logo{
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 800;
+    color: aliceblue;
+
+}
+.site .admin .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.site .admin .menu ul{
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px;
+    
+}
+.site .admin .menu ul li{
+    
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+}
+.site .admin .menu ul li a{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+    width: 80%;
+    height: 90%;
+    list-style-type: none;
+    text-decoration: none;
+    color: #000000a8;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.5s;
+    background: #0000001a;
+    transition: 0.5s;
+
+}
+.site .admin .menu ul li a div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site .admin .menu ul li a .h1{
+    font-weight: 100;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.site .admin .menu ul li a div img{
+    width: 40px;
+}
+.site .admin .menu ul li a:hover{
+    background-color: deepskyblue;
+    border-radius: 7px;
+   transform: translateX(15px);
+    transition: 0.5s;
+}
+.site .admin .menu ul #bg{
+    background-color: deepskyblue;
+    border-radius: 7px;
+    transform: translateX(15px);
+}
+.site .admin .welco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.site .admin .welco .border{
+width: 80%;
+height: 80%;
+background-color: aliceblue;
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 70% 30%;
+box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.195);
+border-bottom: 2px solid rgba(0, 0, 0, 0.217);
+border-left: 2px solid rgba(0, 0, 0, 0.25);
+border-right: 2px solid rgba(0, 0, 0, 0.266);
+border-radius: 10px;
+
+}
+.site .admin .welco .border div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site .admin .welco .border div p{
+    text-align: center;
+    text-rendering: geometricPrecision;
+}
+.site .admin .welco .border div img{
+    width: 70%;
+    height: 100%;
+}
+.site .main {
+    display: grid;
+    position: relative;
+}
+.site .main .profil{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+}
+.site .main .profil .h1{
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site .main .profil .h1 h1{
+    font-weight: 100;
+    color: #00000094;
+}
+.site .main .profil .h1 .opt{
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    background: #0000001c;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.site .main .profil .h1 .opt p{
+    display: none;
+}
+.site .main .profil .h1 .opt:hover{
+    background-color: dodgerblue;
+    transition: 0.5s;
+    color: aliceblue;
+}
+.site .main .profil .h1 .opt:hover > p{
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 35px;
+    background: #00000080;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+    border-radius: 10px;
+    bottom: -80%;
+    transition: 0.5s;
+}
+.site .main .profil .h1 .opt{
+
+}
+.site .main .profil .h1 .opt #opt{
+width: 35px;
+}
+.site .main .profil .h1 .opt .op{
+    width: auto;
+    position: absolute;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background: aliceblue;
+    display: flex;
+    transform: scale(0);
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px #00000078;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    bottom: -160px;
+    left: -170px;
+}
+.site .main .profil .h1 .opt .op a{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    background: #0000001c;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    align-items: center;
+    display: grid;
+    position: relative;
+    color: #00000094;
+    font-size: 110%;
+    text-decoration: none;
+    /* box-shadow: 0 0 4px #0000006b; */
+    transition: 0.5s;
+    grid-template-columns: 45px auto;
+    grid-template-rows: 100%;
+}
+.site .main .profil .h1 .opt .op a div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site .main .profil .h1 .opt .op a div img{
+   width: 30px;
+}
+.site .main .profil .h1 .opt .op a h1{
+    padding: 5px;
+    font-size: 100%;
+}
+.site .main .profil .h1 .opt .op a:hover{
+    background-color: dodgerblue;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.site .main .profil .h1 .opt .op a:hover > h1{
+    transition: 0.5s;
+    color: aliceblue;
+}
+.site .main .profil .content{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 10% 70% ;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.116);
+}
+.site .main .profil .content .img {
+    display: flex;
+    justify-content: center;
+}
+.site .main .profil .content .img .photo{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 7px solid skyblue;
+  overflow: hidden;
+
+}
+.site .main .profil .content .img .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.site .main .profil .content .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.site .main .profil .content .name div a{
+    color: dodgerblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.site .main .profil .content .history{
+     display: grid;
+     grid-template-columns: 100%;
+     grid-template-rows: 10% 90%;
+}
+.site .main .profil .content .history .p{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+ position: relative;
+
+}
+.site .main .profil .content .history .p a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    background: #ffbc1e;
+    border-radius: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.site .main .profil .content .history .p a:hover{
+    background-color: rgb(255, 102, 0);
+    transition: 0.5s;
+}
+.site .main .profil .content .history .p h1{
+    font-size: large;
+ font-weight: 400;
+}
+.site .main .profil .content .history .data{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto;
+}
+.site .main .profil .content .history .data .title{
+   display: grid;
+   grid-template-columns: 7% 11% 9% 9% 9% 9% 9% 9% 9% 9% auto;
+   grid-template-rows: 100%;
+}
+.site .main .profil .content .history .data .title div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-left: 0px;
+   font-size: small;
+}
+.site .main .profil .content .history .data .title div h1{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    width: 90%;
+    height: 80%;
+    background: dodgerblue;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site .main .profil .content .history .data .title .id h1{
+    width: 90%;
+    height: 80%;
+    color: aliceblue;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site .main .profil .content .history .data .contente {
+    overflow: auto;
+    height: 500px;
+}
+
+.site .main .profil .content .history .data .title .Other h1{
+    width: 90%;
+    height: 80%;
+    background: dodgerblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-weight: 800;
+}
+.site .main .profil .content .history .data .contente .contents{
+    display: grid;
+    grid-template-columns:7% 11% 9% 9% 9% 9% 9% 9% 9% 9% auto;
+}
+.site .main .profil .content .history .data .contente .contents div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+    margin-left: 15px;
+    height: 70px;
+}
+.site .main .profil .content .history .data .contente .contents div p{
+    text-align: center;
+}
+.site .main .profil .content .history .data .contente .other{
+    display: flex;
+    justify-content: space-around;
+
+}
+.site .main .profil .content .history .data .contente .other a{
+    text-decoration: none;
+    width: 45%;
+    height: 80%;
+    background-color: rgb(218, 30, 30);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.site .main .profil .content .history .data .contente .other a:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
+}
+.site .main .profil .content .history .data .contente .other #update{
+    background-color: green;
+    font-size: 70%;
+}
+/*----------------employee-----------------------------------*/
+.site .main .head{
+    width: 1400px;
+    height: 100vh;
+    display: grid;
+    background: aliceblue;
+    box-shadow: 0 0 10px #0000001f;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 7% 83%;
+   
+ }
+ .site .main .head .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.288);
+ }
+ .site .main .head .header h1{
+    font-weight: 100;
+    color: #00000094;
+ }
+ .site .main .head .title{
+    display: grid;
+    grid-template-columns: 7% 20% 20% 20% 15% 18%;
+    grid-template-rows: 100%;
+ }
+ .site .main .head .title div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+  
+ }
+ .site .main .head .title div h1{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: large;
+ }
+ .site .main .head .content{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+ }
+ .site .main .head .list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 7% 20% 20% 20% 15% 18%;
+    grid-template-rows: 70px;
+ }
+ .site .main .head .list div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+    margin-left: 5px;
+    gap: 10px;
+ }
+ .site .main .head .list .nom1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+ }
+ .site .main .head .list div p{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: large;
+ }
+ .site .main .head .list div a{
+    text-decoration: none;
+padding: 5px;
+background-color: yellowgreen;
+color: aliceblue;
+display: flex;
+justify-content: center;
+gap: 10px;
+align-items: center;
+border-radius: 10px;
+font-weight: 700;
+font-size: small;
+
+ }
+ .site .main .head .list div a:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
+ }
+
+ /*----------------------RAPPORT------------------------------*/
+ @media only screen and (max-width:500px){
+    .both{
+        display: none;
+    }
+    #forme{
+        z-index: 1;
+        width: 100vw;
+        height: 91vh;
+        background-color: aliceblue;
+        position: fixed;
+      top: 0;
+      left: 0;
+      overflow: auto;
+        border-radius: 7px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.353);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+     }
+     #forme div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+     }
+     #forme div label{
+        position: absolute;
+        top: 0;
+    left: 15%;
+     }
+     #forme #sele label{
+        font-size: 90%;
+        top: -26px;
+     }
+     #forme div div input{
+        font-size: 15px;
+        background-color: aliceblue;
+        padding: 15px 50px;
+        text-transform: uppercase;
+        border: 2px solid rgb(57, 111, 228);
+        outline: none;
+        border-radius: 7px;
+        text-align: center;
+     }
+     #forme .certDiv{
+        width: 100px;
+        height: 50px;
+        margin-left: 10px;
+        display: none;
+       }
+       #forme .certDiv input{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    #forme .certDiv label{
+        position: absolute;
+        top: -30px;
+        left: 25%;
+    }
+    }
+     #forme div select{
+        font-size: 15px;
+        background-color: aliceblue;
+        padding: 15px 50px;
+        border: 2px solid rgb(57, 111, 228);
+        outline: none;
+        border-radius: 7px;
+        text-align: center;
+     }
+     #forme .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(57, 111, 228);
+        margin: 0 40px;
+       
+    
+     }
+    
+     #forme .title h1{
+    font-weight: 100;
+     }
+     #forme .province{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(57, 111, 228);
+        margin: 0 40px;
+        position: relative;
+      
+     }
+     #forme .province p{
+      font-size: 80%;
+        position: absolute;
+        top: 88%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+        color: red;
+     }
+     #forme .province select{
+        font-size: 15px;
+        background-color: aliceblue;
+        padding: 15px 50px;
+        border: 2px solid rgb(57, 111, 228);
+        outline: none;
+        border-radius: 7px;
+        text-align: center;
+     }
+     #forme .mesure{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+     }
+    
+     #forme .mesure #num{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+       
+        margin: 0 20px;
+        position: relative;
+      
+     }
+     #forme .mesure #num div p{
+      font-size: 80%;
+        position: absolute;
+        top: 84%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+        color: red;
+     }
+     #forme .mesure #num input{
+        padding: 15px 20px;
+        font-size: 15px;
+        background-color: aliceblue;
+        padding: 10px;
+        border: 2px solid rgb(57, 111, 228);
+        outline: none;
+        border-radius: 7px;
+        text-align: center;
+       
+     }
+     #forme .mesure #sele{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    
+        margin: 0 10px;
+        position: relative;
+     }
+     #forme .mesure #sele select{
+        font-size: 13px;
+        background-color: aliceblue;
+        padding: 10px;
+        border: 2px solid rgb(57, 111, 228);
+        outline: none;
+        border-radius: 7px;
+        text-align: center;
+       
+     }
+     #forme .mesure #sele div p{
+        font-size: 70%;
+        width: 110%;
+          position: absolute;
+          top: 88%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          color: red;
+       }
+     #forme .date{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(57, 111, 228);
+        margin: 0 40px;
+        position: relative;
+     }
+     #forme .date .noDate p{
+        font-size: 80%;
+          position: absolute;
+          top: 88%;
+          left: 30%;
+          transform: translate(-50%,-50%);
+          color: red;
+       }
+     #forme .date input{
+        font-size: 20px;
+        background-color: aliceblue;
+        padding: 10px 40px;
+        border: 2px solid rgb(57, 111, 228);
+        outline: none;
+        border-radius: 7px;
+     }
+     #forme .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #forme .btn div input{
+        font-size: 20px;
+        background-color: dodgerblue;
+        padding: 10px 70px;
+        border: 2px solid rgb(57, 111, 228);
+        outline: none;
+        border-radius: 50px;
+        color: rgb(255, 255, 255);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.326);
+    }
+    #forme .btn div input:hover{
+        background-color: rgb(5, 96, 187);
+        color: aliceblue;
+    }
+
+    /*-----------add culture-----------------*/
+    #forme .typeCul{
+        display: flex;
+        justify-content: space-evenly;
+     }
+     #forme .typeCul .add a{
+        padding: 10px 1px;
+         width: 40px; 
+         height: 40px;
+        background: dodgerblue;
+        font-size: 100%;
+        color: aliceblue;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0px 2px 2px #00000094;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     #forme .typeCul .add a h1{
+        color: aliceblue;
+     }
+
+
+.big{
+    background-color: rgb(33, 96, 232);
+    width: 150%;
+    height: 100%;
+    position: fixed;
+   top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%)rotate(-45deg)translateX(10px);
+    z-index: 0;
+
+}
+#forme p{
+    display: none;
+}
+@media only screen and (min-width:500px){
+ #forme{
+    z-index: 1;
+    width: 500px;
+    height: 100vh;
+    background-color: aliceblue;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.353);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+ }
+ #forme div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+ #forme div label{
+    position: absolute;
+    top: 0;
+left: 25%;
+ }
+ #forme #sele label{
+    top: -26px;
+ }
+ #forme .typeCul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+ }
+ #forme .typeCul .add a{
+     width: 40px; 
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: dodgerblue;
+    font-size: 100%;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #00000094;
+    transition: 0.5s;
+ }
+ #forme .typeCul .add a:hover{
+    opacity: 70%;
+    transition: 0.5s;
+ }
+ #forme .typeCul .add a h1{
+    color: aliceblue;
+ }
+ #forme div div input{
+    font-size: 15px;
+    background-color: aliceblue;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    border: 2px solid rgb(57, 111, 228);
+    outline: none;
+    border-radius: 7px;
+    text-align: center;
+ }
+ #forme .certDiv{
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    display: none;
+   }
+   #forme .certDiv input{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+#forme .certDiv label{
+    position: absolute;
+    top: -30px;
+    left: 25%;
+}
+ #forme select{
+    font-size: 15px;
+    background-color: aliceblue;
+    padding: 15px 50px;
+    border: 2px solid rgb(57, 111, 228);
+    outline: none;
+    border-radius: 7px;
+    text-align: center;
+ }
+ #forme .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(57, 111, 228);
+    margin: 0 40px;
+   
+
+ }
+
+ #forme .title h1{
+font-weight: 100;
+ }
+ #forme .province{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(57, 111, 228);
+    margin: 0 40px;
+    position: relative;
+  
+ }
+ #forme .province p{
+  font-size: 80%;
+    position: absolute;
+    top: 88%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    color: red;
+ }
+ #forme .province select{
+    font-size: 15px;
+    background-color: aliceblue;
+    padding: 15px 50px;
+    border: 2px solid rgb(57, 111, 228);
+    outline: none;
+    border-radius: 7px;
+    text-align: center;
+ }
+ #forme .mesure{
+display: grid;
+grid-template-columns: 60% 40%;
+grid-template-rows: 100%;
+ }
+
+ #forme .mesure #num{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 20px;
+    position: relative;
+  
+ }
+ #forme .mesure #num div p{
+  font-size: 80%;
+    position: absolute;
+    top: 84%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    color: red;
+ }
+ #forme .mesure #num input{
+    padding: 15px 20px;
+    font-size: 15px;
+    background-color: aliceblue;
+    padding: 10px;
+
+    outline: none;
+    border-radius: 7px;
+    text-align: center;
+   
+ }
+ #forme .mesure #sele{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 10px;
+    position: relative;
+ }
+ #forme .mesure #sele select{
+    font-size: 13px;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 2px solid rgb(57, 111, 228);
+    outline: none;
+    border-radius: 7px;
+    text-align: center;
+   
+ }
+ #forme .mesure #sele div p{
+    font-size: 70%;
+    width: 110%;
+      position: absolute;
+      top: 88%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: red;
+   }
+ #forme .date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(57, 111, 228);
+    margin: 0 40px;
+    position: relative;
+ }
+ #forme .date .noDate p{
+    font-size: 80%;
+      position: absolute;
+      top: 88%;
+      left: 30%;
+      transform: translate(-50%,-50%);
+      color: red;
+   }
+ #forme .date input{
+    font-size: 20px;
+    background-color: aliceblue;
+    padding: 10px 40px;
+    border: 2px solid rgb(57, 111, 228);
+    outline: none;
+    border-radius: 7px;
+ }
+ #forme .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#forme .btn div input{
+    font-size: 20px;
+    background-color: dodgerblue;
+    padding: 10px 70px;
+    border: 2px solid rgb(57, 111, 228);
+    outline: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.326);
+}
+#forme .btn div input:hover{
+    background-color: rgb(5, 96, 187);
+    color: aliceblue;
+}
+}
+
+/*----------------------no display for non filled  box-----------------*/
+
+#no{
+    display: none;
+}
+
+/*--------------------MAP-------------------------------*/
+.site .main .heading{
+   width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.59);
+}
+.site .main .heading h1{
+    font-weight: 100;
+    color: #00000094;
+}
+.map{
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/*-----------------ANIMATION-------------------------*/
+
+.anime{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 2px #00000040;
+border-radius: 10px;
+background-color: white;
+animation: big 1s linear ease ;
+}
+@keyframes big {
+    0%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(0.25);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.anime .img{
+    width: 50px;
+    height: 50px;
+    animation: big 2s linear ease ;
+}
+.anime .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.anime1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+  height: 300px;
+  display: flex;
+  border-radius: 50px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  align-items: center;
+  box-shadow: 0 0 3px 2px #00000036;
+  }
+  .anime1 .img{
+    width: 80px;
+  height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid dodgerblue;
+  }
+  .anime1 .img h1{
+    font-size: 400%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dodgerblue;
+    font-weight: 900;
+  }
+  .anime1 .text{
+    text-align: center;
+  font-size: 100%;
+  display: grid;
+  color: dodgerblue;
+  gap: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .anime1 .btn a{
+    padding: 10px;
+  text-decoration: none;
+  color: dodgerblue;
+  font-weight: 900;
+  outline-color: rgba(255, 166, 0, 0.274);
+  border: 5px solid dodgerblue;
+  border-radius: 10px;
+  transition: 0.5s;
+  }
+  .anime1 .btn a:hover{
+    border: 5px solid rgb(255, 115, 0);
+transition: 0.5s;
+  }
+
+/*---------------------------PERSONAL INFO------------------------------*/
+@media only screen and (max-width:760px) {
+.forms{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+    background-color: aliceblue;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 250px;
+   }
+   .forms div{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+   }
+   .forms div div{
+       width: 90%;
+       display: flex;
+       justify-content: center;
+       position: relative;
+   }
+   .forms div div input{
+      width: 100%;
+      height: 50px;
+    /*  border-top-right-radius: 10px;
+      border-top-left-radius: 10px;*/
+      text-align: center;
+      font-size: 100%;
+      z-index: 11;
+  outline-color: deepskyblue;
+      border: none;
+      border-bottom: 1px solid deepskyblue;
+      caret-color: deepskyblue;
+   }
+ .forms div div  select {
+width: 80%;
+height: 50px;
+text-align: center;
+border-radius: 10px;
+outline: deepskyblue;
+border: 2px solid deepskyblue;
+color: deepskyblue;
+font-size: 100%;
+}
+.forms .h1 div{
+font-size: 100%;
+font-family: math;
+color: deepskyblue;
+border-bottom: 3px solid deepskyblue;
+}
+.forms div div #profil{
+width: 80%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border: 1px solid;
+/*box-shadow: 0 0 7px dodgerblue;*/
+color: deepskyblue;
+transition: 0.5s;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+.forms div p{
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    color: red;
+    font-size: small;
+    transform: translateY(20px);
+    display: none;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.forms div label{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 15px;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.forms div #label{
+   text-align: center;
+   width: 88%;
+   padding: 10px;
+   font-weight: 800;
+    font-size: 15px;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.forms .send{
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.forms div div #profil:hover{
+background-color: rgba(30, 143, 255, 0.226);
+transition: 0.5s;
+}
+.forms div div #profil div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 100%;
+font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.forms div div #profil div img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.forms .send div input{
+width: 70%;
+border-radius: 50px;
+border: none;
+background: deepskyblue;
+box-shadow: 0px 1px 6px 0px #000000ab;
+color: aliceblue;
+}
+.forms .send div input:hover{
+box-shadow: 1px 6px 6px 0px #0000008c;
+}
+
+}
+@media only screen and (max-width:60px) {
+    .forms{
+        width: 80%;
+        height: 90%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background-color: aliceblue;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.616);
+        border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+       }
+    
+}
+
+@media only screen and (min-width:7600px) {
+    *{
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    .forms{
+        width: 80%;
+        height: 90%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background-color: aliceblue;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.616);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+       }
+       .forms .h1{
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%,10px);
+        border-bottom: 5px solid deepskyblue;
+        color: deepskyblue;
+       }
+       .forms div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+       }
+       .forms div label{
+        position: absolute;
+        top: -10px;
+        left: 100px;
+        font-size: 15px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+       .forms div div{
+        width: 100%;
+        height: 50%;
+       }
+       .forms div div select{
+        width: 50%;
+    height: 70%;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 100%;
+    color: deepskyblue;
+    border: 2px solid deepskyblue;
+       }
+       .forms div div div{
+        width: 100%;
+        height: 100%;
+       }
+       .forms div div div h1{
+        color: deepskyblue;
+        box-shadow: 2px 1px 4px deepskyblue;
+        width: 60%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        font-size: 100%;
+       }
+       .forms div div input{
+        width: 70%;
+        height: 70%;
+        background: #ffffffb8;
+        border: none;
+        border-bottom: 2px solid deepskyblue;
+        text-align: center;
+        outline-color: deepskyblue;
+        /* box-shadow: 0px 0px 6px 0px deepskyblue; */
+        /* border-radius: 10px; */
+        font-size: 100%;
+       }
+       .forms .send div input{
+    position: absolute;
+    left: 50%;
+    transform: translate(30%,-50%);
+    border: none;
+    background: deepskyblue;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 900;
+    transition: 0.5s;
+       }
+       .forms .send div input:hover{
+        background-color: rgb(23, 108, 219);
+        border-radius: 10px;
+        transition: 0.5s;
+        box-shadow: 1px 4px 10px #00000094;
+       }
+       .forms div p{
+        position: absolute;
+        bottom: 20px;
+        color: red;
+        display: none;
+       }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:760px) {
+    .forms{
+        width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        overflow: auto;
+        background-color: aliceblue;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.616);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 100%;
+        overflow: auto;
+        grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 250px;
+       }
+       .forms div{
+           width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: relative;
+       }
+       .forms div div{
+           width: 90%;
+           display: flex;
+           justify-content: center;
+           position: relative;
+       }
+       .forms div div input{
+          width: 100%;
+          height: 50px;
+        /*  border-top-right-radius: 10px;
+          border-top-left-radius: 10px;*/
+          text-align: center;
+          font-size: 100%;
+          z-index: 11;
+      outline-color: deepskyblue;
+          border: none;
+          border-bottom: 1px solid deepskyblue;
+          caret-color: deepskyblue;
+       }
+     .forms div div  select {
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    outline: deepskyblue;
+    border: 2px solid deepskyblue;
+    color: deepskyblue;
+    font-size: 100%;
+    }
+    .forms .h1 div{
+    font-size: 100%;
+    font-family: math;
+    color: deepskyblue;
+    border-bottom: 3px solid deepskyblue;
+    }
+    .forms div div #profil{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid;
+   /* box-shadow: 0 0 7px dodgerblue;*/
+    color: deepskyblue;
+    transition: 0.5s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    }
+    .forms div div #profil div img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+    .forms div p{
+        position: absolute;
+        bottom: 15px;
+        right: 25px;
+        color: red;
+        font-size: small;
+        transform: translateY(20px);
+        display: none;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    .forms div label{
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        font-size: 15px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    .forms div #label{
+       text-align: center;
+       width: 88%;
+       font-weight: 800;
+       padding: 10px;
+        font-size: 15px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    
+    .forms .send{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .forms div div #profil:hover{
+        background-color: rgba(30, 143, 255, 0.349);
+        transition: 0.5s;
+    }
+    .forms div div #profil h1{
+    font-size: 100%;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    .forms .send div input{
+    width: 70%;
+    border-radius: 50px;
+    border: none;
+    background: deepskyblue;
+    box-shadow: 0px 1px 6px 0px #000000ab;
+    color: aliceblue;
+    }
+    .forms .send div input:hover{
+    box-shadow: 1px 6px 6px 0px #0000008c;
+    }
+    
+    }
+    @media only screen and (max-width:60px) {
+        .forms{
+            width: 80%;
+            height: 90%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            background-color: aliceblue;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.616);
+            border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+           }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------FULL IMAGE----------------------------------*/
+
+.fullImg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    display: none;
+    position: relative;
+}
+.fullImg #imgFull{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.fullImg #closeIcon{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+
+/*------------------When you are no longer connected------------------*/
+
+.body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .body img{
+    position: absolute;
+  width: 100%;
+  filter: opacity(0.7);
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+  }
+  .body div h1{
+    font-size: 250%;
+  font-weight: 100;
+  text-align: center;
+  color: dodgerblue;
+  }
+  .body div {
+    width: 70%;
+  height: 400px;
+  display: flex;
+  row-gap: 50px;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  z-index: 2;
+  }
+  .body div a{
+    width: 200px;
+  height: 50px;
+  color: aliceblue;
+  font-weight: 900;
+  font-size: 140%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: dodgerblue;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  }
+  .body div a:hover{
+    background-color: rgb(19, 19, 146);
+    transition: 0.5s;
+
+  }
+  /*------------------SET LANGUE-------------*/
+.radio{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: aliceblue;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 0 6px 2px #00000033;
+}
+.radio h1{
+color: dodgerblue;
+}
+.radio .btn{
+
+}
+.radio .btn button{
+    width: 200px;
+height: 50px;
+border-radius: 150px;
+border: none;
+background: dodgerblue;
+color: aliceblue;
+font-weight: 900;
+font-size: 110%;
+box-shadow: 1px 3px 3px #0000007a;
+}
+.radio .btn button:hover{
+    box-shadow: -2px 4px 5px #0000007a;
+}
+.radio .rad{
+    width: 80px;
+height: 42px;
+display: flex;
+/* background-color: dodgerblue; */
+background-color: aliceblue;
+justify-content: end;
+align-items: center;
+box-shadow: inset 1px 0px 4px black;
+border-radius: 50px;
+position: relative;
+    
+}
+.radio .rad .radi{
+    width: 40px;
+    height: 38px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    position: absolute;
+  /* right: 0;*/
+  left: 4%;
+  transition: 0.5s;
+
+}
+
+/*========captilize*/
+
+#capt{
+    text-transform: capitalize;
+}

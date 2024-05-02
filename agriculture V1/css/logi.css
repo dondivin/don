@@ -1,0 +1,785 @@
+@media only screen and (max-width:400px) {
+    .loger {
+        width: 90%;
+        height: 100vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-rows: 15% 10% 60%;
+    }
+    .loger .logo1 {
+        position: relative;
+        overflow: hidden;
+    }
+    .loger .logo1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .loger .button .pos {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+    }
+    .form {
+        width: 100%;
+        height: 400px;
+        background-color: white;
+        /* box-shadow: 0 0 10px rgba(58, 55, 55, 0.548);*/
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    .form .login {
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100;
+        grid-template-rows: 20% 50% 30%;
+    }
+    .form .login .nom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .login .nom h1 {
+        font-size: 35px;
+        font-family: fantasy;
+        font-weight: 500;
+        color: deepskyblue;
+    }
+    .form .login .input {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 40% 20%;
+    }
+    .form .login .input .email {
+        position: relative;
+    }
+    .form .login .input .email h2,
+    #email {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .login .input .email #email {
+        width: 70%;
+        height: 50%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        /* box-shadow: 0 0 7px rgba(0, 0, 0, 0.397);*/
+        background-color: transparent;
+        text-align: center;
+        font-size: larger;
+    }
+    .form .login .input .email h2 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .login .input .pass {
+        position: relative;
+    }
+    .form .login .input .pass h2,
+    #pass {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .login .input .pass #pass {
+        width: 70%;
+        height: 50%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+    }
+    .form .login .input .pass h2 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .login .input .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .login .input .check .p a {
+        font-size: 100%;
+        color: dodgerblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
+    }
+    .form .login .input .check .p a p {
+        font-size: 90%;
+    }
+    .form .login .input .check input {
+        background-color: aliceblue;
+        border: none;
+        border-radius: 50%;
+    }
+    .form .login .btn {
+        position: relative;
+    }
+    .form .login .btn {
+        position: relative;
+    }
+    .form .login .btn input {
+        width: 70%;
+        height: 50px;
+        border-radius: 50px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: deepskyblue;
+        color: aliceblue;
+        font-size: 17px;
+        font-weight: 100;
+        border: none;
+        box-shadow: 0 0 5px rgb(34 33 33 / 55%);
+        outline: none;
+    }
+    .form .login .btn input:hover {
+        box-shadow: 0 0 5px rgba(34, 33, 33, 0.822);
+    }
+    .form .login .btn .logo {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .login .btn .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    /*SIGN UP*/
+    .form .sign {
+        position: absolute;
+        left: 0%;
+    }
+    .form .sign {
+        position: absolute;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100;
+        grid-template-rows: 15% 60% 25%;
+    }
+    .form .sign .nom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .sign .nom h1 {
+        font-size: 35px;
+        font-family: fantasy;
+        font-weight: 500;
+        color: deepskyblue;
+    }
+    .form .sign .input {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25%;
+    }
+    .form .sign .input .name {
+        position: relative;
+    }
+    .form .sign .input .name h3,
+    #name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .input .name h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .input .name #name {
+        width: 70%;
+        height: 70%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+    }
+    .form .sign .input .surname {
+        position: relative;
+    }
+    .form .sign .input .surname h3,
+    #surname {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .input .surname h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .input .surname #surname {
+        width: 70%;
+        height: 70%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+    }
+    .form .sign .input .log {
+        position: relative;
+    }
+    .form .sign .input .log h3,
+    #login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .input .log h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .input .log #login {
+        width: 70%;
+        height: 70%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+    }
+    .form .sign .input .num {
+        position: relative;
+    }
+    .form .sign .input .num h3,
+    #number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .input .num h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .input .num #number {
+        width: 70%;
+        height: 70%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+    }
+    .form .sign .input .num1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .sign .input .num1 #number1 {
+        width: 70%;
+        height: 70%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    .form .sign .input .num1 h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    .form .sign .input .num1 h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .btn {
+        position: relative;
+    }
+    .form .sign .btn input {
+        width: 70%;
+        height: 50px;
+        border-radius: 50px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: deepskyblue;
+        color: aliceblue;
+        font-size: 17px;
+        font-weight: 100;
+        border: none;
+        box-shadow: 0 0 5px rgb(34 33 33 / 55%);
+        outline: none;
+    }
+    .form .sign .btn input:hover {
+        box-shadow: 0 0 5px rgb(34 33 33 / 55%);
+    }
+    .form .sign .btn .logo {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .btn .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    /*BUTTON*/
+    .button {
+        width: 100%;
+        height: auto;
+        /* position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);*/
+        display: flex;
+        justify-content: center;
+    }
+    .button button {
+        width: 45%;
+        height: 50%;
+        border: none;
+        border-radius: 50px;
+        z-index: 1;
+        background-color: transparent;
+        color: aliceblue;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+        outline: none;
+    }
+    .button #btnReg {
+        border: none;
+        outline: none;
+        color: black;
+    }
+    .button .bg {
+        width: 45%;
+        height: 50%;
+        border-radius: 50px;
+        background-color: deepskyblue;
+        font-size: 13px;
+        font-weight: 100;
+        position: absolute;
+        top: 50%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width:400px) {
+    .loger {
+        width: 350px;
+        height: 100vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-rows: 20% 10% 60%;
+    }
+    .loger .logo1 {
+        position: relative;
+        overflow: hidden;
+    }
+    .loger .logo1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .loger .button .pos {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+    }
+    .form {
+        width: 100%;
+        height: 500px;
+        background-color: white;
+        /* box-shadow: 0 0 10px rgba(58, 55, 55, 0.548);*/
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    .form .login {
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 20% 50% 30%;
+    }
+    .form .login .nom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .login .nom h1 {
+        font-size: 35px;
+        font-family: fantasy;
+        font-weight: 500;
+        color: deepskyblue;
+    }
+    .form .login .input {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 40% 20%;
+    }
+    .form .login .input .email {
+        position: relative;
+    }
+    .form .login .input .email h2,
+    #email {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .login .input .email #email {
+        width: 70%;
+        height: 50%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        /* box-shadow: 0 0 7px rgba(0, 0, 0, 0.397);*/
+        background-color: transparent;
+        text-align: center;
+        font-size: larger;
+    }
+    .form .login .input .email h2 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .login .input .pass {
+        position: relative;
+    }
+    .form .login .input .pass h2,
+    #pass {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .login .input .pass #pass {
+        width: 70%;
+        height: 50%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+    }
+    .form .login .input .pass h2 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .login .input .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .login .input .check .p a {
+        font-size: 100%;
+        color: dodgerblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
+    }
+    .form .login .input .check input {
+        background-color: aliceblue;
+        border: none;
+        border-radius: 50%;
+    }
+    .form .login .btn {
+        position: relative;
+    }
+    .form .login .btn {
+        position: relative;
+    }
+    .form .login .btn input {
+        width: 70%;
+        height: 50px;
+        border-radius: 50px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: deepskyblue;
+        color: aliceblue;
+        font-size: 17px;
+        font-weight: 100;
+        border: none;
+        box-shadow: 0 0 5px rgb(34 33 33 / 55%);
+        outline: none;
+    }
+    .form .login .btn input:hover {
+        box-shadow: 0 0 5px rgba(34, 33, 33, 0.822);
+    }
+    .form .login .btn .logo {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .login .btn .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    /*SIGN UP*/
+    .form .sign {
+        position: absolute;
+        left: 0%;
+    }
+    .form .sign {
+        position: absolute;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100;
+        grid-template-rows: 15% 60% 25%;
+    }
+    .form .sign .nom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .sign .nom h1 {
+        font-size: 35px;
+        font-family: fantasy;
+        font-weight: 500;
+        color: deepskyblue;
+    }
+    .form .sign .input {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25% 25%;
+    }
+    .form .sign .input .name {
+        position: relative;
+    }
+    .form .sign .input .name h3,
+    #name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .input .name h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .input .name #name {
+        width: 70%;
+        height: 50%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+    }
+    .form .sign .input .surname {
+        position: relative;
+    }
+    .form .sign .input .surname h3,
+    #surname {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .input .surname h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .input .surname #surname {
+        width: 70%;
+        height: 50%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+    }
+    .form .sign .input .log {
+        position: relative;
+    }
+    .form .sign .input .log h3,
+    #login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .input .log h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .input .log #login {
+        width: 70%;
+        height: 50%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+    }
+    .form .sign .input .num {
+        position: relative;
+    }
+    .form .sign .input .num h3,
+    #number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .input .num h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .input .num #number {
+        width: 70%;
+        height: 50%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+    }
+    .form .sign .input .num1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .sign .input .num1 #number1 {
+        width: 70%;
+        height: 50%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+        font-size: larger;
+        background-color: transparent;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    .form .sign .input .num1 h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    .form .sign .input .num1 h3 {
+        font-size: 17px;
+        color: deepskyblue;
+    }
+    .form .sign .btn {
+        position: relative;
+    }
+    .form .sign .btn input {
+        width: 70%;
+        height: 50px;
+        border-radius: 50px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: deepskyblue;
+        color: aliceblue;
+        font-size: 17px;
+        font-weight: 100;
+        border: none;
+        box-shadow: 0 0 5px rgb(34 33 33 / 55%);
+        outline: none;
+    }
+    .form .sign .btn input:hover {
+        box-shadow: 0 0 5px rgb(34 33 33 / 55%);
+    }
+    .form .sign .btn .logo {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form .sign .btn .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    /*BUTTON*/
+    .button {
+        width: 100%;
+        height: auto;
+        /* position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/
+        display: flex;
+        justify-content: center;
+    }
+    .button button {
+        width: 45%;
+        height: 50%;
+        border: none;
+        border-radius: 50px;
+        z-index: 1;
+        background-color: transparent;
+        color: aliceblue;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+        outline: none;
+    }
+    .button #btnReg {
+        border: none;
+        outline: none;
+        color: black;
+    }
+    .button .bg {
+        width: 45%;
+        height: 50%;
+        border-radius: 50px;
+        background-color: deepskyblue;
+        font-size: 13px;
+        font-weight: 100;
+        position: absolute;
+        top: 50%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+    }
+}
