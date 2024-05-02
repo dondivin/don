@@ -1,0 +1,327 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast{
+    position: fixed;
+    box-shadow: 0 0 20px #00000036;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    transform: scale(0);
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 10px;
+    h1{  
+            width: 70%;
+            text-align: center;
+            font-size: 20px;
+            color: black;
+    
+
+    }
+    .confBtn{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        button{
+            width: 70px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: red;
+            color: aliceblue;
+            border: none;
+            font-weight: 900;
+            font-size: medium;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        button:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+            width: 80px;
+            height: 60px;
+            transition: 0.4s;
+        }
+        button:nth-child(1){
+         background-color: dodgerblue;
+        }
+        button:nth-child(2){
+            background-color: red;
+        }
+    }
+
+}
+.toastDeco{
+    position: fixed;
+    box-shadow: 0 0 20px #00000036;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    transform: scale(0);
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 10px;
+    h1{  
+            width: 70%;
+            text-align: center;
+            font-size: 20px;
+            color: black;
+    
+
+    }
+    .confBtn{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        button{
+            width: 70px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: red;
+            color: aliceblue;
+            border: none;
+            font-weight: 900;
+            font-size: medium;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        button:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+            width: 80px;
+            height: 60px;
+            transition: 0.4s;
+        }
+        button:nth-child(1){
+         background-color: dodgerblue;
+        }
+        button:nth-child(2){
+            background-color: red;
+        }
+    }
+
+}
+.toastSend{
+    position: fixed;
+    box-shadow: 0 0 20px #00000036;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    transform: scale(0);
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 10px;
+    h1{
+        width: 70%;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+
+    }
+    .confBtn{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        button{
+            width: 70px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: dodgerblue;
+            color: aliceblue;
+            border: none;
+            font-weight: 900;
+            font-size: medium;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        button:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+            width: 80px;
+            height: 60px;
+            transition: 0.4s;
+        }
+      
+    }
+
+}
+
+.toastReg{
+    position: fixed;
+    box-shadow: 0 0 20px #00000036;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    transform: scale(0);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 10px;
+    h1{
+        width: 70%;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+
+    }
+    .confBtn{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        button{
+            width: 70px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: dodgerblue;
+            color: aliceblue;
+            border: none;
+            font-weight: 900;
+            font-size: medium;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        button:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+            width: 80px;
+            height: 60px;
+            transition: 0.4s;
+        }
+      
+    }
+
+}
+
+.toastDocReq{
+    position: fixed;
+    box-shadow: 0 0 20px #00000036;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    transform: scale(0);
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 10px;
+    h1{
+        width: 70%;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+
+    }
+    .confBtn{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        button{
+            width: 70px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: dodgerblue;
+            color: aliceblue;
+            border: none;
+            font-weight: 900;
+            font-size: medium;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        button:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+            width: 80px;
+            height: 60px;
+            transition: 0.4s;
+        }
+      
+    }
+
+}
+
+h5{
+    color: red;
+    font-size: 12px;
+    font-weight: 100;
+    display: none;
+}
+#userShow{
+    font-size: 25px;
+    color: dodgerblue;
+}
+.toastDeco{
+    position: fixed;
+    box-shadow: 0 0 20px #00000036;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    transform: scale(0);
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 10px;
+    h1{
+        width: 70%;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+
+    }
+    .confBtn{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        button{
+            width: 70px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: dodgerblue;
+            color: aliceblue;
+            border: none;
+            font-weight: 900;
+            font-size: medium;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        button:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+            width: 80px;
+            height: 60px;
+            transition: 0.4s;
+        }
+      
+    }
+
+}

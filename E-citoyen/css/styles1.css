@@ -1,0 +1,893 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.bigSite{
+    position: relative;
+}
+body{
+    background-color: rgba(240, 248, 255, 0.212);
+    overflow: hidden;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: aliceblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto;
+}
+.home header{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto 150px;
+  grid-template-rows: 100%;
+    gap: 10px;
+    font-size: small;
+    font-weight: 900;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px #00000038;
+   
+}
+.home header .logo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+   
+}
+.home header .logo h1{
+    font-size: 30px;
+}
+.home header .img{
+    width: 100%;
+    height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-rows: 100%;
+  align-items: center;
+
+    /* border-radius: 50%; */
+   
+    transition: 0.4s;
+    cursor: pointer;
+    gap: 5px;
+}
+.home header .img span{
+    
+    width: 100%;
+    height: 70%;
+    display: flex;
+   
+    border-radius: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.home header .img span h2{
+    width: 100%;
+    color: rgba(0, 0, 0, 0.719);
+    width: max-content;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight:800;
+    text-transform: capitalize;
+}
+.home header .img span:hover{
+    background-color: dodgerblue;
+    transition: 0.4s;
+    color: aliceblue;
+}
+.home header .img span:hover h2{
+    color: aliceblue;
+    transition: 0.4s;
+}
+.home header .img:hove{
+    background-color: dodgerblue;
+    transition: 0.4s;
+    padding: 10px;
+}
+.home header .info{
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 70px auto;
+}
+.home header .info .title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home header .info .title p{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home header .img img{
+    width: 35px;
+    height: 35px;
+}
+.home header .file{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home header .file .imgfile{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+    gap: 10px;
+}
+.home header .file .imgfile:hover{
+    background-color: rgba(13, 13, 14, 0.158);
+    transition: 0.4s;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.home header .file .imgfile img{
+    height: 40%;
+
+}
+.home header .file .imgfile p{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    color: aliceblue;
+    display: flex;
+justify-content: center;
+align-items: center;
+    bottom: 10%;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: red;
+
+}
+.home header .file .imgfile h2{
+    font-weight: 500;
+    color: black;
+    font-size: 14px;
+    width: max-content;
+
+}
+.home main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+.home main .user{
+    width: 500px;
+    height: 90%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px auto;
+    border-radius: 10px;
+    position: relative;
+    top: -110px;
+
+}
+.home main .user .imguser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home main .user .imguser .img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid dodgerblue;
+}
+.home main .user .imguser .img img{
+    width: 100%;
+}
+.home main .user .infouser{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.home main .user .infouser .info{
+   display: grid;
+   grid-template-columns: 40% auto;
+   grid-template-rows: 100%;
+}
+.home main .user .infouser .info h1{
+    font-size: 15px;
+    font-weight: 600;
+    color: #49443e;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.home main .user .infouser .info input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    outline: none;
+    color: #0000007a;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0 30px;
+    font-size: medium;
+    font-weight: 600;
+    
+}
+.home main .user .infouser .more{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home main .user .infouser .more button{
+    width: 80%;
+    height: 60%;
+    color: aliceblue;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.home main .user .infouser .more button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.178);
+    transition: 0.4s;
+    background-color: rgb(11, 75, 160);
+}
+.home main .doc{
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px auto;
+    overflow: hidden;
+}
+.home main .doc .title{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px auto;
+    box-shadow: 0px 0px 12px 0px #0000001f;
+    position: relative;
+}
+.home main .doc .title h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home main .doc .title .heads{
+    display: grid;
+    grid-template-columns: 10% 15% 40% 15% 20%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+}
+.home main .doc .mydoc {
+width: 100%;
+height: 100%;
+overflow-y: auto;
+position: relative;
+}
+.home main .doc .mydoc .noDoc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.596);
+    width: max-content;
+}
+.home main .doc .mydoc .allDocs{
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px auto 70px;
+    overflow: hidden;
+}
+.home main .doc .mydoc .allDocs .infoDoc{
+    height:100%;
+    width: 100%;
+    display: flex;
+}
+.home main .doc .mydoc .allDocs .infoDoc .info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-top: 2px solid rgba(0, 0, 0, 0.23);
+    justify-content: center;
+}
+.home main .doc .mydoc .allDocs .infoDoc .info div{
+    width: 100%;
+    display: flex;
+
+}
+.home main .doc .mydoc .allDocs .infoDoc .info div input{
+    border: none;
+    color: #0000009e;
+    font-size: medium;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.home main .doc .mydoc .allDocs .infoDoc .info h2{
+    font-size: medium;
+    color: #0000009e;
+    margin-left: 30px;
+    padding: 2px
+}
+.home main .doc .mydoc .allDocs .btn-valid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+.home main .doc .mydoc .allDocs .btn-valid div{
+    height: fit-content;
+}
+.home main .doc .mydoc .allDocs .btn-valid #valider{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    border: none;
+    transition: 0.4s;
+    font-size: medium;
+    font-weight: 900;
+    color: aliceblue;
+    cursor: pointer;
+}
+.home main .doc .mydoc .allDocs .btn-valid #rejeter{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(197, 2, 2);
+    border: none;
+    transition: 0.4s;
+    font-size: medium;
+    font-weight: 900;
+    color: aliceblue;
+    cursor: pointer;
+}
+.home main .doc .mydoc .allDocs .btn-valid #valider:hover{
+    padding: 10px;
+    transition: 0.4s;
+    background-color: rgb(5, 95, 185);
+}
+.home main .doc .mydoc .allDocs .btn-valid #rejeter:hover{
+    padding: 10px;
+    transition: 0.4s;
+    background-color: rgb(192, 47, 47);
+  
+    
+}
+
+.home main .doc .mydoc .docs{
+    display: grid;
+    grid-template-columns: 10% 15% 40% 15% 20%;
+    grid-template-rows: 70px;
+    align-items: center;
+    border-bottom: 2px solid #0000001f;
+    justify-items: center;
+    transition: 0.4s;
+}
+.home main .doc .mydoc .docs:hover{
+    box-shadow: -1px 5px 20px #0000002e;
+    transition: 0.4s;
+}
+.home main .doc .mydoc .docs div{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+cursor: pointer;
+}
+.home main .doc .mydoc .docs .status #no_valid{
+    background: #fbea02;
+    border-radius: 50px;
+    padding: 5px;
+    color: aliceblue;
+}
+.home main .doc .mydoc .docs .status #valid{
+    background: rgba(7, 175, 7, 0.521);
+    border-radius: 50px;
+    padding: 5px;
+    color: aliceblue;
+}
+
+.home main .doc .mydoc .docs div img{
+width: 40px;
+}
+.home main .doc .mydoc .docs .download{
+    cursor: pointer;
+}
+.home main .doc .mydoc .docs .download img{
+   width: 40px;
+}
+.home main .doc .mydoc .docs .download a{
+   color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.home main .doc .title .back{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 70px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+.home main .doc .title .back p{
+    width: 70px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    transition: 0.4s;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.home main .doc .title .back p:hover{
+    background-color: dodgerblue;
+    color: aliceblue;
+    transition: 0.4s;
+}
+.bg{
+    width: 100vw;
+    height: 101vh;
+    position: absolute;
+}
+.bg img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.3);
+    object-fit: cover;
+}
+.bigSite .btnInfo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height:200px;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px auto;
+    gap: 10px;
+    font-size: small;
+    font-weight: 900;
+    background-color: aliceblue;
+    display: none;
+}
+.bigSite .btnInfo .logo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+   
+}
+.bigSite .btnInfo .img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-radius: 50%; */
+   
+    transition: 0.4s;
+    cursor: pointer;
+    gap: 5px;
+}
+.bigSite .btnInfo .img span{
+    height: 62px;
+    width: 90%;
+    background: white;
+    display: flex;
+    color: black;
+    border-radius: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.bigSite .btnInfo .img span:hover{
+    background-color: dodgerblue;
+    transition: 0.4s;
+    color: aliceblue;
+}
+.bigSite .btnInfo .img:hove{
+    background-color: dodgerblue;
+    transition: 0.4s;
+    padding: 10px;
+}
+.bigSite .btnInfo .info{
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 70px auto;
+}
+.bigSite .btnInfo .info .title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bigSite .btnInfo .info .title p{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigSite .btnInfo .img img{
+    width: 35px;
+    height: 35px;
+}
+.home main  .selectInfo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 350px;
+   /* width: auto;
+    height: auto;*/
+   overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px auto;
+    gap: 10px;
+    font-size: small;
+    font-weight: 900;
+    background-color: aliceblue;
+    
+}
+.home main  .selectInfo .list .check{
+    display: none;
+}
+.home main  .selectInfo .list .check img{
+    background-color: dodgerblue;
+    border-radius: 50%;
+}
+.home main  .selectInfo .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.home main  .selectInfo .logo .back{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+   /* display: flex;*/
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.home main  .selectInfo{
+    transform: scale(0);
+    box-shadow: 0 0 11px 3px #63606030;
+}
+.home main  .selectInfo .logo .back p{
+    width: 70px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    transition: 0.4s;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.home main  .selectInfo .logo .back p:hover{
+    background-color: dodgerblue;
+    color: aliceblue;
+    transition: 0.4s;
+}
+.home main  .selectInfo .monInfo , .pereInfo , .mereInfo{
+    position: absolute;
+    left: 120%;
+    top: 0;
+}
+.home main  .selectInfo .list{
+    position: relative;
+}
+.home main  .selectInfo .list{
+    width: 100%;
+    height: 100%;
+}
+.home main  .selectInfo .list .me , .parent{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 50px;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.4s;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.home main  .selectInfo .list .me h2 , .parent h2{
+    text-align: start;
+    width: 100%;
+    transition: 0.2s;
+    font-size: 20px;
+}
+.home main  .selectInfo .list .me:hover , .parent:hover{
+    background-color: dodgerblue;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.home main  .selectInfo .list .me:hover h2 , .parent:hover h2{
+    color: aliceblue;
+    transition: 0.2s;
+}
+.home main  .selectInfo .list .me .check .img , .parent .check .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.home main  .selectInfo .list .me .check .img #stat , .parent .check .img #stat{
+    position: absolute;
+top: -80%;
+color: dodgerblue;
+font-size: smaller;
+}
+.home main  .selectInfo .list div img{
+    width: 20px;
+   
+}
+.home main  .selectInfo .comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home main  .selectInfo .comp button{
+    border:  none;
+    border-radius: 10px;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(11, 15, 19);
+    color: aliceblue;
+    font-size: small;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.home main  .selectInfo .comp button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+    transition: 0.4s;
+}
+.home main  .selectInfo .list .center{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px 50px auto;
+    gap: 10px;
+   position: relative;
+}
+.home main .selectInfo .forms {
+    width: 900px;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.home main .selectInfo .forms .h1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home main .selectInfo .forms .h1 h1 {
+    color: dodgerblue;
+    font-weight: 900;
+}
+
+.home main .selectInfo .forms div p {
+    display: none;
+    color: red;
+}
+
+.home main .selectInfo .forms div div {
+    position: relative;
+}
+.home main .selectInfo .forms div #profil{
+    border: 5px solid dodgerblue;
+    border-radius: 7px;
+}
+.home main .selectInfo .forms div div input {
+    box-sizing: border-box;
+    width: 350px;
+    height: 60px;
+    outline: none;
+    color: #0000007a;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0 30px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.home main .selectInfo .forms div div label {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: medium;
+    margin-left: 7%;
+}
+
+home main .selectInfo .forms div div img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+
+.home main .selectInfo .forms div div select {
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    color: dodgerblue;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: medium;
+    font-weight: 700;
+    outline-color: dodgerblue;
+}
+
+.home main .selectInfo .forms .Fcountry {
+    width: 500p;
+}
+.home main .selectInfo .forms select{
+    background-color: white;
+}
+
+.home main .selectInfo .forms .Fprofil {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home main .selectInfo .forms .send {
+    width: 80%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home main .selectInfo .forms .send button {
+    min-width: 100px;
+    width: auto;
+    height: 50px;
+    border-radius: 7px;
+    background-color: dodgerblue;
+    color: aliceblue;
+    font-weight: 900;
+    padding: 0 10px;
+    transition: 0.4s;
+    font-size: small;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    gap: 7px;
+}
+.home main .selectInfo .forms .send button img{
+    height: 20px;
+    display: none;
+}
+.home main .selectInfo .forms .send button:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    ;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.322);
+}
+
+#label {
+    display: none;
+}
+.unvailable{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.unvailable p{
+    width: 70%;
+    height: 30px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.131);
+    color: rgba(0, 0, 0, 0.575);
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

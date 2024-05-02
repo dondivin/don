@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    position: relative;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.tete{
+width: 148mm;
+height: 210mm;
+background-color: white;
+box-sizing: border-box;
+padding: 50px;
+}  
+
+
+
+.titi{
+    font-size: 8px;
+}
+.tete .titi #mimi{
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+    width: max-content;
+    margin-left: 70px;
+}
+ .titi #tata{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid black;
+    width: max-content;
+}
+.titi #toto{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+.titi #zozo{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+
+
+.tete .para {
+
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    line-height: 1.5;
+    font-size: 8px;
+}
+.infoto{
+margin-top: 40px;
+display: flex;
+row-gap: 6px;
+flex-direction: column;
+font-size: 8px;
+
+    
+}
+
+
+.sign{
+    margin-top: 25px;
+   line-height: 1.5;
+    
+    font-size: 8px;
+}
+.sasa{
+    margin-top: 90px;
+    margin-left: 180px;
+    font-size: 8px;
+}
+.ceni{
+    margin-top: 20px;
+    margin-left: 180px;
+    font-size: 8px;
+}
+.ceci{
+    margin-top: 25px;
+    margin-left: 180px;
+    font-size: 8px;
+}

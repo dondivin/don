@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form1.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(7, 2, 80);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Identification</title>
+    <link rel="website icon" href="don/agriDigital.png">
+</head>
+
+<body>
+    <div class="bigSite">
+        <form class="forms" action="regForm.php" enctype="multipart/form-data" method="post">
+
+            <div class="h1">
+                <div>
+                    <h1>Identite Complete</h1>
+                </div>
+            </div>
+            <div class="Fname">
+                <div>
+                    <label for="">Izina</label>
+                    <input type="text" name="Fname" value="" id="nom" required>
+                </div>
+                <p id="nomErr">Shiramwo Indome gusa</p>
+            </div>
+            <div class="Fsurname">
+                <div>
+                    <label for="">Itazirano</label>
+                    <input type="text" name="Fprenom" value="" id="prenom" required>
+                </div>
+                <p id="prenomErr">Shiramwo Indome gusa</p>
+            </div>
+            <div class="Fphone">
+                <div>
+                    <label for="">Numéro de Téléphone</label>
+                    <input type="text" name="Fphone" value="" id="phone" required>
+
+                </div>
+                <p id="phoneErr">Shiramwo ibiharuro gusa</p>
+            </div>
+            <div class="Femail">
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" value="" name="Femail" id="email">
+                </div>
+            </div>
+            <div class="Faddress">
+                <div>
+                    <label for="">Aho Uba</label>
+                    <input type="text" value="" name="Faddress" id="" required>
+                </div>
+            </div>
+            <div class="Fid">
+                <div>
+                    <label for="">Nomero ya karangamuntu</label>
+                    <input type="text" name="Fnum_id" value="" id="id" required>
+                </div>
+                <p id="idErr">Shiramwo inomero yanyu ya karangamuntu</p>
+            </div>
+            <div class="Fgender">
+                <div>
+                    <select name="selectGenre" value="" id="">
+    
+               <option value="<?=$row['genre']?>">GENRE</option>         
+            <option value="Umugabo">Umugabo</option>
+            <option value="Umugore">Umugore</option>
+
+                
+            <option value="Umugabo">Umugabo</option>
+            <option value="Umugore">Umugore</option>
+
+      
+
+               
+
+        </select>
+                </div>
+            </div>
+            <div class="Ftyp_agr">
+                <div>
+                    <select name="typ_agr" value="Type" id="">
+   
+                      
+            <option value="<?=$row['typ_agriculteur']?>">Kategori</option>
+            <option value="Umugwizambuto">UMUGWIZAMBUTO</option>
+            <option value="Umurimyi">UMURIMYI</option>
+
+           
+        </select>
+                </div>
+            </div>
+            <div class="Fcountry">
+                <div>
+                    <label for="">Igihugu</label>
+                    <input type="text" value="" name="Fcountry" id="" required>
+                </div>
+            </div>
+            <div class="Fprofil">
+                <label id="label" for="">Photo</label>
+                <div>
+                    <div id="profil">
+                        <div>
+                            <img id="img" src="profil/agriDigital.png" alt="">
+                        </div>
+
+                    </div>
+                    <input type="file" name="file" accept="image/png,image/jpeg,image/jpg" id="file" hidden>
+                </div>
+            </div>
+            <div class="send">
+                <div>
+                    <button type="submit" id="send" name="send">Kurungika</button>
+                </div>
+            </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="selectInfo">
+                
+
+                
+        <div class="logo">
+            <h1>E-CITOYEN</h1>
+            <div class="back">
+               <p id="back">retour</p> 
+            </div>
+        </div>
+  
+    <div class="list">
+        <div class="center">
+        <div class="me">
+<img src="icon/user.svg" alt="">
+<h1>Mon info</h1> 
+
+<div class="check">
+<div class="img">
+<p id="stat">complete</p>
+<img src="icon/checkmark-svgrepo-com.svg" alt="">
+</div>
+
+</div>
+        </div>
+        <div class="parent" id="pere">
+<img src="icon/simple-parent-and-child-svgrepo-com.svg" alt="">
+<h1>Père info</h1>
+<div class="check">
+<div class="img">
+<p id="stat">complete</p>
+<img src="icon/checkmark-svgrepo-com.svg" alt="">
+</div>
+
+</div>
+        </div>
+
+        <div class="parent" id="mere">
+            <img src="icon/simple-parent-and-child-svgrepo-com.svg" alt="">
+            <h1>Mère info</h1>
+            <div class="check">
+                <div class="img">
+                    <p id="stat">complete</p>
+                    <img src="icon/checkmark-svgrepo-com.svg" alt="">
+                </div>
+                
+            </div>
+                            </div>
+   
+
+    <div class="comp">
+<button id="complete">Complete</button>
+    </div>
+</div>
+
+
+<div class="monInfo">
+<form class="forms" action="regForm.php" enctype="multipart/form-data" method="post">
+
+
+<div class="Fname">
+    <div>
+        <label for="">Votre nom</label>
+        <input class="inputMe" type="text" name="Fname" value="" id="nom" required>
+    </div>
+    <p id="nomErr">Shiramwo Indome gusa</p>
+</div>
+<div class="Fsurname">
+    <div>
+        <label for="">Votre Prenom</label>
+        <input class="inputMe" type="text" name="Fprenom" value="" id="prenom" required>
+    </div>
+    <p id="prenomErr">Shiramwo Indome gusa</p>
+</div>
+<div class="Fphone">
+    <div>
+        <label for="">Numéro de Téléphone</label>
+        <input class="inputMe" type="text" name="Fphone" value="" id="phone" required>
+
+    </div>
+    <p id="phoneErr">Shiramwo ibiharuro gusa</p>
+</div>
+<div class="Femail">
+    <div>
+        <label for="">Email</label>
+        <input class="inputMe" type="email" value="" name="Femail" id="email">
+    </div>
+</div>
+<div class="Faddress">
+    <div>
+        <label for="dateNaissance">Date De naissance</label>
+        <input class="inputMe" type="date" value="" name="Faddress" id="" required>
+    </div>
+</div>
+<div class="Fid">
+    <div>
+        <label for="">Lieu de naissance</label>
+        <input class="inputMe" type="text" name="Fnum_id" value="" id="id" required>
+    </div>
+    <p id="idErr">Shiramwo inomero yanyu ya karangamuntu</p>
+</div>
+
+
+<div class="Fcountry">
+    <div>
+        <label for="">Résidence actuelle</label>
+        <input class="inputMe" type="text" value="" name="Fcountry" id="" required>
+    </div>
+</div>
+<div class="Fcountry">
+    <div>
+        <label for="">Etat-civil</label>
+        <input class="inputMe" type="text" value="" name="Fcountry" id="" required>
+    </div>
+</div>
+<div class="Fid">
+    <div>
+        <label for="">Profession</label>
+        <input class="inputMe" type="text" name="Fnum_id" value="" id="id" required>
+    </div>
+    <p id="idErr">Shiramwo inomero yanyu ya karangamuntu</p>
+</div>
+<div class="Fid">
+    <div>
+        <label for=""></label>
+        <input class="inputMe" type="text" name="Fnum_id" value="" id="id" required>
+    </div>
+    <p id="idErr">Shiramwo inomero yanyu ya karangamuntu</p>
+</div>
+<div class="send">
+    <div>
+        <button type="submit" id="send">Enregistre <img id="btnload" src="icon/loading.svg" alt=""></button>
+    </div>
+</div>
+</form>
+</div>
+
+
+<div class="pereInfo">
+<form class="forms" action="regForm.php" enctype="multipart/form-data" method="post">
+
+
+<div class="Fname">
+    <div>
+        <label for="">Nom de père</label>
+        <input class="inputPere  input" type="text" name="Fname" value="" id="nom" required>
+    </div>
+    <p id="nomErr">Shiramwo Indome gusa</p>
+</div>
+<div class="Fsurname">
+    <div>
+        <label for="">Prenom de la père</label>
+        <input class="inputPere  input" type="text" name="Fprenom" value="" id="prenom" required>
+    </div>
+    <p id="prenomErr">Shiramwo Indome gusa</p>
+</div>
+<div class="Fphone">
+    <div>
+        <label for="dateNaissance">Data de naissance</label>
+        <input class="inputPere  input" type="date" name="Fphone" value="" id="phone" required>
+
+    </div>
+    <p id="phoneErr">Shiramwo ibiharuro gusa</p>
+</div>
+<div class="Femail">
+    <div>
+        <label for="">Profession</label>
+        <input class="inputPere  input" type="email" value="" name="Femail" id="email">
+    </div>
+</div>
+<div class="Faddress">
+    <div>
+        <label for="">Résidence actuelle</label>
+        <input class="inputPere  input" type="text" value="" name="Faddress" id="" required>
+    </div>
+</div>
+<div class="Fid">
+    <div>
+        <label for="">Nationalité</label>
+        <input class="inputPere  input" type="text" name="Fnum_id" value="" id="id" required>
+    </div>
+    <p id="idErr">Shiramwo inomero yanyu ya karangamuntu</p>
+</div>
+
+
+
+<div class="send">
+    <div>
+        <button type="submit" id="send">Enregistre <img id="btnload" src="icon/loading.svg" alt=""></button>
+    </div>
+</div>
+</form>
+</div>
+
+<div class="mereInfo">
+<form class="forms" action="regForm.php" enctype="multipart/form-data" method="post">
+
+
+<div class="Fname">
+    <div>
+        <label for="">Nom de Mère</label>
+        <input class="inputMere" type="text" name="Fname" value="" id="nom" required>
+    </div>
+    <p id="nomErr">Shiramwo Indome gusa</p>
+</div>
+<div class="Fsurname">
+    <div>
+        <label for="">Prenom de la Mère</label>
+        <input class="inputMere" type="text" name="Fprenom" value="" id="prenom" required>
+    </div>
+    <p id="prenomErr">Shiramwo Indome gusa</p>
+</div>
+<div class="Fphone">
+    <div>
+        <label for="dateNaissance">Data de naissance</label>
+        <input class="inputMere" type="date" name="Fphone" value="" id="phone" required>
+
+    </div>
+    <p id="phoneErr">Shiramwo ibiharuro gusa</p>
+</div>
+<div class="Femail">
+    <div>
+        <label for="">Profession</label>
+        <input class="inputMere" type="email" value="" name="Femail" id="email">
+    </div>
+</div>
+<div class="Faddress">
+    <div>
+        <label for="">Résidence actuelle</label>
+        <input class="inputMere" type="text" value="" name="Faddress" id="" required>
+    </div>
+</div>
+<div class="Fid">
+    <div>
+        <label for="">Nationalité</label>
+        <input class="inputMere" type="text" name="Fnum_id" value="" id="id" required>
+    </div>
+    <p id="idErr">Shiramwo inomero yanyu ya karangamuntu</p>
+</div>
+
+
+
+<div class="send">
+    <div>
+        <button type="submit" id="send">Enregistre <img id="btnload" src="icon/loading.svg" alt=""></button>
+    </div>
+</div>
+</form>
+</div>
+
+
+</div>
+
+    
+
+</div>
+
+
+
+
+</body>
+<script src="js/formulair.js"></script>
+<script src="js/label.js"></script>
+<script src="js/translateMenu.j"></script>
+<script src="js/load.js"></script>
+<script>
+    file = document.querySelector('#file');
+
+    //submit button
+    let send = document.querySelector('#send');
+    btn = document.querySelector('#profil');
+    let nom = document.querySelector('#nom'),
+        phone = document.querySelector('#phone'),
+        num_id = document.querySelector('#id'),
+        imgName = document.querySelector('#img'),
+        form = document.querySelector('.forms'),
+        prenom = document.querySelector('#prenom'),
+
+
+
+        nomErr = document.querySelector('#nomErr'),
+        prenomErr = document.querySelector('#prenomErr'),
+        phoneErr = document.querySelector('#phoneErr'),
+        idErr = document.querySelector('#idErr');
+
+    btn.addEventListener("click", () => {
+        file.click();
+    });
+
+    file.addEventListener("change", () => {
+        fileName = file.files;
+        let imgSrc = URL.createObjectURL(fileName[0]);
+        console.log(fileName[0].name);
+        name = fileName[0].name;
+        imgName.src = imgSrc;
+        console.log(file);
+    });
+
+
+    setInterval(() => {
+
+
+        let a = nom.value,
+            b = prenom.value;
+
+        // let b = new Array(a);
+
+        //checking name contain only alphabet
+        if (a != '') {
+            if (onlyLetters(a)) {
+                //  console.log('true');
+                nomErr.style.display = 'none';
+            } else {
+                nomErr.style.display = 'block';
+            };
+        };
+
+        if (b != '') {
+            if (onlyLetters(b)) {
+                prenomErr.style.display = 'none';
+
+            } else {
+                prenomErr.style.display = 'block';
+            }
+        };
+
+        //console.log(onlyLetters(a));
+        //checking if phone numbers are numbers
+
+        let phoneNum = phone.value;
+        if (phoneNum != '') {
+            if (onlyNumbers(phoneNum)) {
+                //console.log(true);
+                phoneErr.style.display = 'none';
+            } else {
+                phoneErr.style.display = 'block';
+
+            };
+        };
+        //checking if id is numbers only
+
+        let id = num_id.value;
+        if (id != '') {
+            if (onlyNumbers(id)) {
+                //console.log(true);
+                idErr.style.display = 'none';
+            } else {
+                idErr.style.display = 'block';
+
+            }
+        };
+    }, 500);
+
+    //prevent on submit
+
+    send.addEventListener("click", () => {
+
+
+        let a = nom.value,
+            b = prenom.value;
+
+        // let b = new Array(a);
+
+        //checking name contain only alphabet
+        if (a != '') {
+            if (onlyLetters(a)) {
+                console.log('true');
+                nomErr.style.display = 'none';
+            } else {
+                nomErr.style.display = 'block';
+                event.preventDefault();
+            };
+        };
+        if (b != '') {
+            if (onlyLetters(b)) {
+                prenomErr.style.display = 'none';
+
+            } else {
+                prenomErr.style.display = 'block';
+                event.preventDefault();
+            }
+        };
+        //console.log(onlyLetters(a));
+        //checking if phone numbers are numbers
+
+        let phoneNum = phone.value;
+        if (phoneNum != '') {
+            if (onlyNumbers(phoneNum)) {
+                console.log(true);
+                phoneErr.style.display = 'none';
+            } else {
+                phoneErr.style.display = 'block';
+
+                event.preventDefault();
+            };
+        };
+        //checking if id is numbers only
+
+        let id = num_id.value;
+        if (id != '') {
+            if (onlyNumbers(id)) {
+                console.log(true);
+                idErr.style.display = 'none';
+            } else {
+                idErr.style.display = 'block';
+                event.preventDefault();
+            }
+        };
+    });
+
+
+
+    //chech if input contain only letters
+
+    function onlyLetters(str) {
+        return /^[a-z ]+$/i.test(str);
+    };
+
+
+    //CHECK NUMBERS
+    function onlyNumbers(num) {
+        return /^[0-9 / . +]+$/i.test(num);
+    };
+</script>
+
+</html>

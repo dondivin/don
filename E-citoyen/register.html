@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(7, 2, 80);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Identification</title>
+  
+</head>
+
+<body>
+    <div class="bigSite">
+        <form class="forms" action="regForm.php" enctype="multipart/form-data" method="post">
+
+            <div class="h1">
+                <div>
+                    <h1>AUTHENTIFICATION</h1>
+                </div>
+            </div>
+            <div class="Fname">
+                <div>
+                    <label for="">Izina</label>
+                    <input type="text" name="Fname" value="" id="nom" required>
+                </div>
+                <p id="nomErr">Shiramwo Indome gusa</p>
+            </div>
+            <div class="Fsurname">
+                <div>
+                    <label for="">Itazirano</label>
+                    <input type="text" name="Fprenom" value="" id="prenom" required>
+                </div>
+                <p id="prenomErr">Shiramwo Indome gusa</p>
+            </div>
+            <div class="Fphone">
+                <div>
+                    <label for="">Numéro de Téléphone</label>
+                    <input type="text" name="Fphone" value="" id="phone" required>
+
+                </div>
+                <p id="phoneErr">Shiramwo ibiharuro gusa</p>
+            </div>
+            <div class="Femail">
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" value="" name="Femail" id="email">
+                </div>
+            </div>
+            <div class="Faddress">
+                <div>
+                    <label for="">Aho Uba</label>
+                    <input type="text" value="" name="Faddress" id="" required>
+                </div>
+            </div>
+            <div class="Fid">
+                <div>
+                    <label for="">Nomero ya karangamuntu</label>
+                    <input type="text" name="Fnum_id" value="" id="id" required>
+                </div>
+                <p id="idErr">Shiramwo inomero yanyu ya karangamuntu</p>
+            </div>
+            <div class="Fgender">
+                <div>
+                    <select name="selectGenre" value="" id="">
+    
+               <option value="<?=$row['genre']?>">GENRE</option>         
+            <option value="Umugabo">Umugabo</option>
+            <option value="Umugore">Umugore</option>
+
+                
+            <option value="Umugabo">Umugabo</option>
+            <option value="Umugore">Umugore</option>
+
+      
+
+               
+
+        </select>
+                </div>
+            </div>
+            <div class="Ftyp_agr">
+                <div>
+                    <select name="typ_agr" value="Type" id="">
+   
+                      
+            <option value="<?=$row['typ_agriculteur']?>">Kategori</option>
+            <option value="Umugwizambuto">UMUGWIZAMBUTO</option>
+            <option value="Umurimyi">UMURIMYI</option>
+
+           
+        </select>
+                </div>
+            </div>
+            <div class="Fcountry">
+                <div>
+                    <label for="">Igihugu</label>
+                    <input type="text" value="" name="Fcountry" id="" required>
+                </div>
+            </div>
+            <div class="Fprofil">
+                <label id="label" for="">Photo</label>
+                <div>
+                    <div id="profil">
+                        <div>
+                            <img id="img" src="profil/agriDigital.png" alt="">
+                        </div>
+
+                    </div>
+                    <input type="file" name="file" accept="image/png,image/jpeg,image/jpg" id="file" hidden>
+                </div>
+            </div>
+            <div class="send">
+                <div>
+                    <button type="submit" id="send" name="send">Kurungika</button>
+                </div>
+            </div>
+
+
+    </div>
+
+
+</body>
+<script src="js/charVerfy.js"></script>
+<script src="js/label.js"></script>
+</html>

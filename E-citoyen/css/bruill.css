@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgba(240, 248, 255, 0.212);
+    overflow: hidden;
+}
+.bg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+.bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:auto;
+}
+
+.home main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.home main  .selectInfo{
+
+  
+    width: auto;
+    height: auto;
+  
+    padding: 10px;
+    border-radius: 10px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px auto;
+    gap: 10px;
+    font-size: small;
+    font-weight: 900;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.home main  .selectInfo .list .check{
+    display: none;
+}
+.home main  .selectInfo .list .check img{
+    background-color: dodgerblue;
+    border-radius: 50%;
+}
+.home main  .selectInfo .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+}
+.home main  .selectInfo .logo .back{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+   /* display: flex;*/
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.home main  .selectInfo .logo .back p{
+    width: 70px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    transition: 0.4s;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.home main  .selectInfo .logo .back p:hover{
+    background-color: dodgerblue;
+    color: aliceblue;
+    transition: 0.4s;
+}
+
+.home main  .selectInfo .list{
+    position: relative;
+}
+.home main  .selectInfo .list{
+    width: 100%;
+    height: 100%;
+}
+.home main  .selectInfo .list .me , .parent{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 50px;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.4s;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.home main  .selectInfo .list .me h2 , .parent h2{
+    text-align: start;
+    width: 100%;
+    transition: 0.2s;
+    font-size: 20px;
+}
+.home main  .selectInfo .list .me:hover , .parent:hover{
+    background-color: dodgerblue;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.home main  .selectInfo .list .me:hover h2 , .parent:hover h2{
+    color: aliceblue;
+    transition: 0.2s;
+}
+.home main  .selectInfo .list .me .check .img , .parent .check .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.home main  .selectInfo .list .me .check .img #stat , .parent .check .img #stat{
+    position: absolute;
+top: -80%;
+color: dodgerblue;
+font-size: smaller;
+}
+.home main  .selectInfo .list div img{
+    width: 20px;
+   
+}
+.home main  .selectInfo .comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home main  .selectInfo .comp button{
+    border:  none;
+    border-radius: 10px;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(11, 15, 19);
+    color: aliceblue;
+    font-size: small;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.home main  .selectInfo .comp button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+    transition: 0.4s;
+}
+.home main  .selectInfo .list .center{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px 50px auto;
+    gap: 10px;
+   position: relative;
+}
+.home main .selectInfo .forms {
+    width: 900px;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.home main .selectInfo .forms .h1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home main .selectInfo .forms .h1 h1 {
+    color: dodgerblue;
+    font-weight: 900;
+}
+
+.home main .selectInfo .forms div p {
+    display: none;
+    color: red;
+}
+
+.home main .selectInfo .forms div div {
+    position: relative;
+}
+.home main .selectInfo .forms div #profil{
+    border: 5px solid dodgerblue;
+    border-radius: 7px;
+}
+.home main .selectInfo .forms div div input {
+    box-sizing: border-box;
+    width: 350px;
+    height: 60px;
+    outline: none;
+    color: #0000007a;
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 0 30px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.home main .selectInfo .forms div div label {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: medium;
+    margin-left: 7%;
+}
+
+home main .selectInfo .forms div div img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+
+.home main .selectInfo .forms div div select {
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    color: dodgerblue;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: medium;
+    font-weight: 700;
+    outline-color: dodgerblue;
+}
+
+.home main .selectInfo .forms .Fcountry {
+    width: 500p;
+}
+.home main .selectInfo .forms select{
+    background-color: white;
+}
+
+.home main .selectInfo .forms .Fprofil {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home main .selectInfo .forms .send {
+    width: 80%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home main .selectInfo .forms .send button {
+    min-width: 100px;
+    width: auto;
+    height: 50px;
+    border-radius: 7px;
+    background-color: dodgerblue;
+    color: aliceblue;
+    font-weight: 900;
+    padding: 0 10px;
+    transition: 0.4s;
+    font-size: small;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    gap: 7px;
+}
+.home main .selectInfo .forms .send button img{
+    height: 20px;
+    display: none;
+}
+.home main .selectInfo .forms .send button:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    ;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.322);
+}
+
+#label {
+    display: none;
+}

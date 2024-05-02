@@ -1,0 +1,219 @@
+<?php
+include 'conn.php';
+session_start();
+if(isset($_SESSION['userID'])){
+  $userID  = $_SESSION['userID'];
+$req = "SELECT * FROM personifo where userID ='$userID'";
+$res = mysql_query($conn,$req);
+if(mysqli_num_rows($res)>0){
+  foreach($res as $row){
+    
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/carte.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carté</title>
+</head>
+<body>
+    <div class="carte">
+        <div class="info">
+          <div class="myinfo">
+            <h1>IZINA :</h1>
+            <h2>NTAKIRUTIMANA</h2>
+          </div>
+          <div class="myinfo">
+            <h1>AMATAZIRANO :</h1>
+            <h2>Don Divin</h2>
+          </div>
+          <div class="myinfo">
+            <h1>SE :</h1>
+            <h2>NTAKIRUTIMANA Mélance</h2>
+          </div>
+          <div class="myinfo">
+            <h1>NYINA :</h1>
+            <h2>NDAYISHIMIYE Médiatrice</h2>
+          </div>
+          <div class="myinfo">
+            <h1>PROVINSI :</h1>
+            <h2>KAYANZA</h2>
+          </div>
+          <div class="myinfo">
+            <h1>KOMINE :</h1>
+            <h2>KAYANZA</h2>
+          </div>
+          <div class="myinfo">
+            <h1>YAVUKIYE :</h1>
+            <h2>MUSAVE</h2>
+          </div>
+          <div class="myinfo">
+            <h1>ITALIKI :</h1>
+            <h2>2003</h2>
+          </div>
+          <div class="myinfo">
+            <h1>ARUBATSE :</h1>
+            <h2>OYA</h2>
+          </div>
+          <div class="myinfo">
+            <h1>AKAZI AKORA :</h1>
+            <h2>ETUDIANT</h2>
+          </div>
+       
+        </div>
+        <div class="img">
+
+         <div class="finger">
+           <h1>IGIKUMU CA NYENEYO</h1>
+         </div>
+         <div class="photo">
+         <div class="cadre">
+            <img src="photo/divin.jpg" alt="">
+         </div>
+         </div>
+         <div class="cacher">
+          <h1>IKASHE</h1>
+         </div>
+
+        </div>
+        <div class="table">
+          <div class="limTable">
+        <div class="tab" id="bold">
+           <h1>AHO Y'IKWIRIKIRANIJE KUBA</h1>
+        </div>
+        <div class="tab" id="bold1">
+          <div><h1>ITALIKI</h1></div>
+          <div><h1>UMUSOZI</h1></div>
+          <div><h1>KOMINE</h1></div>
+          <div class="border"><h1>PROVENSI</h1></div>
+        </div>
+        <div class="tab">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="border"></div>
+        </div>
+        <div class="tab">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="border"></div>
+        </div>
+        <div class="tab">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="border"></div>
+        </div>
+        <div class="tab">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="border"></div>
+        </div>
+        <div class="tab">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="border"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="carte1">
+      <div class="info">
+       <div class="idInfo" >
+        <h1 id="rep">REPUBLIQUE DU BURUNDI</h1>
+       </div>
+       <div class="idInfo" >
+         <h1 id="nom">IKARATA KARANGAMUNTU</h1>
+       </div>
+       <div class="idInfo">
+        <h1>N° MIFPDL</h1>
+        <h2>0805/160.415</h2>
+       </div>
+       <div class="idInfo">
+       <h1>ITANGIWE</h1>
+       <h2>KAYANZA</h2>
+       </div>
+       <div class="idInfo">
+        <h1>ITALIKI</h1>
+        <h2>31/12/2020</h2>
+       </div>
+       <div class="idInfo" id="double">
+        <div>
+          <h1>UWUYITANZE</h1>
+          <h2>MUSITANTERI</h2>
+        </div>
+        <div id="admin">
+          <h2>NYANDWI Gilbert</h2>
+        </div>
+       
+       </div>
+    
+     
+      </div>
+      <div class="img">
+
+       
+      </div>
+      <div class="table">
+        <div class="limTable">
+      <div class="tab" id="bold">
+         <h1>AHO Y'IKWIRIKIRANIJE KUBA</h1>
+      </div>
+      <div class="tab" id="bold1">
+        <div><h1>ITALIKI</h1></div>
+        <div><h1>UMUSOZI</h1></div>
+        <div><h1>KOMINE</h1></div>
+        <div class="border"><h1>PROVENSI</h1></div>
+      </div>
+      <div class="tab">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="border"></div>
+      </div>
+      <div class="tab">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="border"></div>
+      </div>
+      <div class="tab">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="border"></div>
+      </div>
+      <div class="tab">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="border"></div>
+      </div>
+      <div class="tab">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="border"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+<script src="js/exportDoc1.js"></script>
+<script src="js/exportDoc2.js"></script>
+</html>
+<?php
+  }
+}
+}else{
+  header('Location:index.php');
+}
+?>

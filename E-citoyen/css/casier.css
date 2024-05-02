@@ -1,0 +1,182 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.doc{
+    width: 210mm;
+    height: 290mm;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60mm auto 55mm;
+    box-sizing: border-box;
+    padding: 50px 4%;
+}
+.doc header{
+    width: 100%;
+    height:100%;
+    display: flex;
+
+}
+.doc header .info{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto auto auto;
+}
+
+.doc header .info h1{
+    font-size: 17px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.doc header .info .img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-left:10% ;
+}
+.doc header .info .img img{
+    width: 100px;
+    height: 100px;
+}
+.doc footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+.doc footer .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+}
+.doc footer .info h1{
+    font-size: 17px;
+    text-align: center;
+}
+.doc footer .info #off{
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    
+
+}
+.doc main {
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+.doc main .body{
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+} 
+
+.doc main .title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}.doc main .title
+.doc main .title h1{
+    padding: 10px;
+}
+.doc main .more p{
+    font-size: 17px;
+}
+
+/***************bonne conduite-----------------*/
+
+.body #bonne{
+    font-size: 17px;
+}
+.body .infoPerson{
+    display: grid;
+    grid-template-columns: 25% 50%;
+
+}
+.body .infoPerson h1{
+    font-size:17px;
+    width:100%;
+}
+.body .infoPerson div{
+    display: flex;
+    width: 100%;
+   
+}
+.body .infoPerson div h2{
+    width: 70%;
+    font-size: 17px;
+}
+.body .infoPerson div h3{
+    width: auto;
+}
+.body #div{
+    display: grid;
+    grid-template-columns: 50% 30%;
+}
+.body .enno{
+    padding-top: 10px;
+}
+
+    .body #bonne{
+            padding-bottom: 20px;
+        }
+        .doc main .body{
+            
+            flex-direction: column;
+        }
+        footer b{
+            color: dodgerblue;
+        }
+        .enno #enno ,h1{
+            font-size: 17px;
+        }
+        .enno h1{
+            text-align: end;
+        }
+        .body .infoPerson h1:nth-child(2){
+            width: auto;
+        }
+        .more .title h1{
+            font-size: 17px;
+        }
+        .more h1{
+            font-size: 17px;
+        }
+
+        .body #bonne{
+            padding-bottom: 2px;
+        }
+     
+        footer b{
+            color: dodgerblue;
+        }
+        .enno #enno ,h1{
+            font-size: 17px;
+        }
+        .body .infoPerson h1:nth-child(2){
+            width: auto;
+        }
+        .more .title h1{
+            font-size: 17px;
+        }
+        .more h1{
+            font-size: 17px;
+        }

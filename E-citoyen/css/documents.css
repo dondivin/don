@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.doc{
+    width: 1200px;
+    height:1500px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 700px 300px;
+    box-sizing: border-box;
+    padding: 50px 7%;
+}
+.doc header{
+    width: 100%;
+    height:100%;
+    display: flex;
+
+}
+.doc header .info{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 100px 7% 7% 7% 7%;
+}
+
+.doc header .info h1{
+    font-size: larger;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.doc header .info .img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+.doc header .info .img img{
+    width: 150px;
+    height: 150px;
+}
+.doc footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+.doc footer .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.doc footer .info h1{
+    font-size: larger;
+}
+.doc footer .info #off{
+    text-align: center;
+    font-weight: 900;
+    font-size: x-large;
+    
+
+}
+.doc main {
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+.doc main .body{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    font-size: 30px;
+} 
+.doc main .body h2{
+    font-size: smaller;
+}
+.doc main .title h1{
+    border-bottom: 5px solid black;
+}
+
+/***************bonne conduite-----------------*/
+
+.body #bonne{
+    font-size: smaller;
+}
+.body .infoPerson{
+    display: flex;
+
+}
+.body .infoPerson h1{
+    font-size: smaller;
+    width: 400px;
+}

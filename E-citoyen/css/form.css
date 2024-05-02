@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.bigSite{
+    position: relative;
+   
+    width: 500px;
+    height: 600px;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 70%;
+    overflow: hidden;
+}
+.bigSite .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+background-color: white;
+}
+.bigSite .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.bigSite .logo img{
+  width: 110px;
+  object-fit: cover;
+}
+.bigSite .logo h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: dodgerblue;
+    background-image: url(icon/uburundi.png);
+    background-position: left;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 7px 10px #00000021;
+}
+#imgPage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    filter: brightness(0.4);
+}
+.bigSite .log{
+    position: relative;
+}
+.bigSite .logbtn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.bigSite .logbtn .bar{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.bigSite .logbtn .bar span{
+    width: 50%;
+    height: 3px;
+    background-color: dodgerblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom-right-radius: 10px;
+}
+.bigSite .logbtn button{
+    width: 150px;
+    height: 50%;
+    border: none;
+    font-size: larger;
+    color: dodgerblue;
+    font-weight: 900;
+background-color: transparent;
+position: relative;
+z-index: 1;
+cursor: pointer;
+}
+.bigSite .logbtn #reg{
+    color: #00000063;
+}
+.bigSite #login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bigSite #register{
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%,-50%);
+}
+.bigSite .forms {
+   width: auto;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:30px 70px;
+}
+.bigSite .forms .view{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    top: 0;
+    right: 3%;
+}
+.bigSite .forms .view img{
+    width: 30px;
+    cursor: pointer;
+}
+.bigSite .forms div .icon{
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 50%;
+    z-index: 2;
+    border-top-left-radius: 50%;
+    background-color: dodgerblue;
+}
+.bigSite .forms div .icon img{
+    width: 40px;
+}
+.bigSite .forms .h1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigSite .forms .h1 h1 {
+    color: dodgerblue;
+    font-weight: 900;
+}
+.bigSite .forms div{
+    position: relative;
+}
+.bigSite .forms div p {
+    display: none;
+    color: red;
+}
+
+.bigSite .forms div div {
+    position: relative;
+}
+.bigSite .forms div #profil{
+    border: 5px solid dodgerblue;
+    border-radius: 7px;
+}
+.bigSite .forms div div input {
+    box-sizing: border-box;
+    width: 350px;
+    height: 60px;
+    outline: none;
+    color: #0000007a;
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    font-size: medium;
+    font-weight: 600;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.bigSite .forms div div label {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: medium;
+    margin-left: 20%;
+}
+.bigSite .forms div div #prov{
+    position: absolute;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dodgerblue;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-size: small;
+}
+
+
+.bigSite .forms div div select {
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    color: dodgerblue;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.bigSite .forms .Fcountry {
+    width: 500p;
+}
+
+.bigSite .forms .Fprofil {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigSite .forms .send {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bigSite .forms .send button {
+    min-width: 100px;
+    width: auto;
+    height: 50px;
+    border-radius: 7px;
+    background-color: dodgerblue;
+    color: aliceblue;
+    font-weight: 900;
+    transition: 0.4s;
+    font-size: small;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+.bigSite .forms .send button img{
+    width: 15px;
+    display: none;
+}
+.bigSite .forms .send button:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    ;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.322);
+}
+
+#label {
+    display: none;
+}

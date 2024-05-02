@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation:spin 1s linear infinite;
+
+    div{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            width: 40px;
+            height: 40px;
+          background-color: red;
+        }
+    }
+
+    #first{
+        position: absolute;
+        top: 0;
+        left: 0; 
+       
+       
+        span{
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         animation: first 1s linear alternate infinite;
+        }
+    }
+
+    #second{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      
+        span{
+            position: absolute;
+            top: 0;
+            right: 0;
+            animation: second 1s linear alternate infinite;
+           }
+    }
+    #third{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      
+        span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: third 1s linear alternate infinite;
+           }
+    }
+    #four{
+        position: absolute;
+        top: 0;
+        right: 0;
+     
+        span{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: four 1s linear alternate infinite;
+            background-color: green;
+           }
+    }
+
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg); 
+    }
+}
+
+@keyframes first {
+    0%{
+        bottom: 30%;
+        right: 30%;
+        border-radius: 50%;
+    }
+    100%{
+        bottom: 0%;
+        right: 0%;
+        border-radius: 10px;
+        border-bottom-right-radius: 1px;
+    }
+    
+}
+@keyframes second {
+    0%{
+        top: 30%;
+        right: 30%;
+        border-radius: 50%;
+    }
+    100%{
+        top: 0%;
+        right: 0%;
+        border-radius: 10px;
+        border-top-right-radius: 1px;
+    }
+    
+}
+@keyframes third {
+    0%{
+        top: 30%;
+        left: 30%;
+        border-radius: 50%;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+        border-radius: 10px;
+        border-top-left-radius: 1px;
+    }
+    
+}
+@keyframes four {
+    0%{
+        bottom: 30%;
+        left: 30%;
+        border-radius: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 0%;
+        border-radius: 10px;
+        border-bottom-left-radius: 1px;
+    }
+    
+}
